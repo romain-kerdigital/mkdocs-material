@@ -151,6 +151,9 @@ markdown_extensions:
 # Page tree
 nav:
   - Accueil: index.md
+  - Reprise des marchés SAFI:
+    - Diagramme: setup/changing-the-colors.md
+    - Javascript: setup/changing-the-colors.md
   - Getting started:
     - Installation: getting-started.md
     - Creating your site: creating-your-site.md
