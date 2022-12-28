@@ -10,6 +10,13 @@ configure via `mkdocs.yml`.
 
 ### Social links
 
+| Method      | Description                          |
+| :---------- | :----------------------------------- |
+| `GET`       | :material-check:     Fetch resource  |
+| `PUT`       | :material-check-all: Update resource |
+| `DELETE`    | :material-close:     Delete resource |
+
+
 [:octicons-tag-24: 1.0.0][Social links support] ·
 :octicons-milestone-24: Default: _none_
 
