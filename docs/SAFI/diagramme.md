@@ -1,14 +1,16 @@
-# Setting up the footer
+# Contexte du projet
 
-The footer of your project documentation is a great place to add links to
-websites or platforms you or your company are using as additional marketing 
-channels, e.g. :fontawesome-brands-twitter:{ style="color: #1DA1F2" } or
-:fontawesome-brands-youtube:{ style="color: #EE0F0F" }, which you can easily
-configure via `mkdocs.yml`.
+## Résumé
 
-## Configuration
+Migration de données de SAFI vers Grand Angle.
 
-### Social links
+![Reprise Marchés SAFI](RepriseMarchesSAFI-main.png){ width="300"}
+
+
+
+## Diagramme
+
+## Social links
 
 | Titre                                               | Description                                                                                                                                                                                                                           |
 | --------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
