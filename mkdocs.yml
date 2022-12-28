@@ -73,7 +73,7 @@ theme:
     text: Roboto
     code: Roboto Mono
   favicon: assets/favicon-cd29.png
-  logo: assets/logo-cd29.png
+  logo: assets/favicon-cd29.png
 
 # Plugins
 plugins:
