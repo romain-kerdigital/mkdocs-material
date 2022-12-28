@@ -19,19 +19,18 @@
 # IN THE SOFTWARE.
 
 # Project information
-site_name: Material for MkDocs
-site_url: https://squidfunk.github.io/mkdocs-material/
-site_author: Martin Donath
+site_name: Documentation CD29
+site_url: https://cd29.rpa-solutions.io
+site_author: Romain YOUSSOFI
 site_description: >-
-  Create a branded static site from a set of Markdown files to host the
-  documentation of your Open Source or commercial project
+  Documentation pour le Conseil départemental du finistère
 
 # Repository
-repo_name: squidfunk/mkdocs-material
-repo_url: https://github.com/squidfunk/mkdocs-material
+repo_name: 
+repo_url: 
 
 # Copyright
-copyright: Copyright &copy; 2016 - 2022 Martin Donath
+copyright: Copyright &copy; 2023 RPA Solutions
 
 # Configuration
 theme:
@@ -151,7 +150,7 @@ markdown_extensions:
 
 # Page tree
 nav:
-  - Home: index.md
+  - Accueil: index.md
   - Getting started:
     - Installation: getting-started.md
     - Creating your site: creating-your-site.md
