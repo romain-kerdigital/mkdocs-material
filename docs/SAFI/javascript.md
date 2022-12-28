@@ -15,8 +15,8 @@ document.getElementsbyId('test');
 
 ## Remplir une case
 ``` javascript
-extra:
-  generator: false
+document.getElementsbyId('test').value="Test";
+
 ```
 
 ## Cocher une case
