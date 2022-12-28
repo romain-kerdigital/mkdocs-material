@@ -1,11 +1,8 @@
-# Contexte du projet
+# Suivi
 
 ## Résumé
 
 Migration de données de SAFI vers Grand Angle.
-
-![Reprise Marchés SAFI](RepriseMarchesSAFI-main.png)
-
 
 
 ## Diagramme
