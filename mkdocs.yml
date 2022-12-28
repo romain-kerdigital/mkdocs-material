@@ -35,6 +35,7 @@ copyright: Copyright &copy; 2023
 theme:
   name: material
   custom_dir: material/.overrides
+  language: fr
   features:
     # - announce.dismiss
     - content.code.annotate
