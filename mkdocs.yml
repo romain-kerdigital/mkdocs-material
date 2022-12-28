@@ -151,8 +151,9 @@ markdown_extensions:
 nav:
   - Accueil: index.md
   - Reprise des marchés SAFI:
-    - Diagramme: setup/changing-the-colors.md
-    - Javascript: setup/changing-the-colors.md
+    - Diagramme: SAFI/diagramme.md
+    - Javascript: SAFI/javascript.md
+    - Suivi projet: SAFI/suivi-projet.md
   - Getting started:
     - Installation: getting-started.md
     - Creating your site: creating-your-site.md
