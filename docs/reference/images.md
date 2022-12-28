@@ -167,7 +167,6 @@ hash fragment to the image URL:
 ```
 
 <div class="result" markdown>
-
 ![Zelda light world]{ width="300" }
 ![Zelda dark world]{ width="300" }
 
