@@ -164,9 +164,9 @@ markdown_extensions:
 nav:
   - Accueil: index.md
   - Reprise des marchés SAFI:
-    - Diagramme: SAFI/diagramme.md
+    - Projet: SAFI/projet.md
     - Javascript: SAFI/javascript.md
-    - Suivi projet: SAFI/suivi-projet.md
+    - Suivi: SAFI/suivi.md
   - Getting started:
     - Installation: getting-started.md
     - Creating your site: creating-your-site.md
