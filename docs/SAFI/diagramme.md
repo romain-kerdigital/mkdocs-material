@@ -4,7 +4,7 @@
 
 Migration de données de SAFI vers Grand Angle.
 
-![Reprise Marchés SAFI](RepriseMarchesSAFI-main.png){ width="300"}
+![Reprise Marchés SAFI](RepriseMarchesSAFI-main.png)
 
 
 
