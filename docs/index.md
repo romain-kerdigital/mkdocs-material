@@ -1,6 +1,6 @@
 ---
 template: home.html
-title: Material for MkDocs
+title: Documentation CD29
 ᴴₒᴴₒᴴₒ: false
 ---
 
