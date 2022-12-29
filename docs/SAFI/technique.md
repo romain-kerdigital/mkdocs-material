@@ -37,10 +37,10 @@ On continue avec l'étape de [création du marché](#B_CreationNouveauMarche)
 ### A_Initialisation
 ![Reprise Marchés SAFI - A_Initialisation](RepriseMarchesSAFI-A_Initialisation.png)
 #### A_Initialisation - Fermer les applications
-![Reprise Marchés SAFI - A_Initialisation - Fermer les applications ouvertes](RepriseMarchesSAFI-A_Initialisation_FermerApplications)
+![Reprise Marchés SAFI - A_Initialisation - Fermer les applications ouvertes](RepriseMarchesSAFI-A_Initialisation_FermerApplications.png)
 
 #### A_Initialisation - Lire les données dans le fichier Excel
-![Reprise Marchés SAFI - A_Initialisation - Lire les données dans le fichier Excel](RepriseMarchesSAFI-A_Initialisation_LancerExcel)
+![Reprise Marchés SAFI - A_Initialisation - Lire les données dans le fichier Excel](RepriseMarchesSAFI-A_Initialisation_LancerExcel.png)
 Les données sont stockées dans ExcelData.
 Pour y accéder, il faut ajouter des crochets : ExcelData[x][y]
 Où "x" correspond à la ligne et "y" correspond à la colonne.
@@ -55,7 +55,7 @@ Pour y, plutôt que de raisonner par lettres pour les colonnes. On peut utiliser
 
 
 #### A_Initialisation - Se connecter à Grand Angle
-![Reprise Marchés SAFI - A_Initialisation - Se connecter à Grand Angle](RepriseMarchesSAFI-A_Initialisation_ConnexionGrandAngle)
+![Reprise Marchés SAFI - A_Initialisation - Se connecter à Grand Angle](RepriseMarchesSAFI-A_Initialisation_ConnexionGrandAngle.png)
 On allume Microsoft Edge sur la page de connexion.
 
 Il peut arriver (surtout lors des tests) que l'on soit déjà connectés afin de poursuivre l'automatisation même dans un statut connecté, on vérifie l'URL.
