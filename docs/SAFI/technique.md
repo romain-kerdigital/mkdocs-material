@@ -73,7 +73,40 @@ document.getElementsByClassName("mat-snack-bar-container")[0].style.display = "n
 
 ### B_CreationNouveauMarche
 ![Reprise Marchés SAFI - B_CreationNouveauMarche_1](RepriseMarchesSAFI-B_CreationNouveauMarche_1.png)
-![Reprise Marchés SAFI - B_CreationNouveauMarche_2(RepriseMarchesSAFI-B_CreationNouveauMarche_2.png)
+![Reprise Marchés SAFI - B_CreationNouveauMarche_2](RepriseMarchesSAFI-B_CreationNouveauMarche_2.png)
+
+```javascript
+//Cliquer sur les elements du menu
+document.getElementsByClassName("bouton-menu")[0].click()
+document.getElementsByClassName("mat-focus-indicator bandeau__button mat-button mat-button-base ng-star-inserted")[3].click()
+document.getElementsByClassName('menu ng-star-inserted')[0].click()
+document.getElementsByClassName('gda_bouton NouveauImg gda_bouton_actif')[0].click()
+```
+```javascript
+//Remplir les informations sur le marché
+document.getElementsByName('marche_miAnnee')[0].value="%ExcelData[LoopIndex]['Numéro de marché - Année AAAA']%";
+document.getElementsByName('marche_msNumero')[0].value="%ExcelData[LoopIndex]['Numéro de marché - Code']%";
+document.getElementsByName('marche_msObjet')[0].value="%ExcelData[LoopIndex]['Objet']%";
+```
+```javascript
+// Duree
+document.getElementsByName('marcheDuree_miAnnees')[0].value="%ExcelData[LoopIndex]['Durée du marché - Années']%";
+document.getElementsByName('marcheDuree_miMois')[0].value="%ExcelData[LoopIndex]['Durée du marché - Mois']%";
+document.getElementsByName('marcheDuree_miJours')[0].value="%ExcelData[LoopIndex]['Durée du marché - Jours']%";
+```
+
+```javascript
+// Cliquer sur la loupe Type d'engagement
+saisieAssisteeTypeEnga()
+// Plutôt que de cliquer sur la loupe directement, on lance le javascript associé.
+```
+
+
+
+```javascript
+// Cliquer sur la loupe Type d'engagement
+saisieAssisteeTypeEnga()
+```
 
 
 ## Annexes
