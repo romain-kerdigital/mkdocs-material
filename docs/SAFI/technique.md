@@ -34,8 +34,7 @@ Tous les contractants sont sur la même ligne (jusqu'à 10 contractants, d'où l
 On continue avec l'étape de [création du marché](#B_CreationNouveauMarche)
 
 ### A_Initialisation
-![Reprise Marchés SAFI - A_Initialisation](RepriseMarchesSAFI-A_Initialisation.png
-)
+![Reprise Marchés SAFI - A_Initialisation](RepriseMarchesSAFI-A_Initialisation.png)
 
 
 ### B_CreationNouveauMarche
