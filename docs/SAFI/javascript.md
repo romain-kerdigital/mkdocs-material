@@ -46,12 +46,15 @@ document.getElementsbyId('test').value="Texte";
 
 ```
 
-> :warning: Attention ! En remplissant manuellement certaines cases, des scripts se lancent automatiquement parfois. (Notamment sur des montants)
+!!! note 
+Attention ! En remplissant manuellement certaines cases, des scripts se lancent automatiquement parfois. (Notamment sur des montants)
 Généralement on les retrouve dans le paramètre "onchange" de l'élément.
 Lorsque l'on change uniquement la valeur par script, les scripts qui se lançaient automatiquement ne se lancent pas.
 C'est notamment le cas pour tous les montants avec TVA calculée.
 
-!!! Attention ! En remplissant manuellement certaines cases, des scripts se lancent automatiquement parfois. (Notamment sur des montants)
+!!! warning 
+
+Attention ! En remplissant manuellement certaines cases, des scripts se lancent automatiquement parfois. (Notamment sur des montants)
 Généralement on les retrouve dans le paramètre "onchange" de l'élément.
 Lorsque l'on change uniquement la valeur par script, les scripts qui se lançaient automatiquement ne se lancent pas.
 C'est notamment le cas pour tous les montants avec TVA calculée.
