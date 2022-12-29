@@ -24,21 +24,39 @@ Il permet de confirmer les étapes à paramétrer pour le robot en envisageant t
 
 L'automatisation démarre par une [Initialisation](#A_Initialisation) :
   - Fermer les applications ouvertes
-  - Rouvrir les applications
   - Lire les données dans le fichier Excel
-  - Se connecter sur Grand Angle
+  - Se connecter à Grand Angle
+
 
 Ensuite on démarre une boucle qui se répétera à chaque ligne du fichier Excel
 Tous les contractants sont sur la même ligne (jusqu'à 10 contractants, d'où le nombre important de colonnes)
 
 On continue avec l'étape de [création du marché](#B_CreationNouveauMarche)
 
+
 ### A_Initialisation
 ![Reprise Marchés SAFI - A_Initialisation](RepriseMarchesSAFI-A_Initialisation.png)
-![Reprise Marchés SAFI - A_Initialisation - Fermer les applications](RepriseMarchesSAFI-A_Initialisation_FermerApplications)
+#### A_Initialisation - Fermer les applications
+![Reprise Marchés SAFI - A_Initialisation - Fermer les applications ouvertes](RepriseMarchesSAFI-A_Initialisation_FermerApplications)
+
+#### A_Initialisation - Lire les données dans le fichier Excel
+![Reprise Marchés SAFI - A_Initialisation - Lire les données dans le fichier Excel](RepriseMarchesSAFI-A_Initialisation_LancerExcel)
+Les données sont stockées dans ExcelData.
+Pour y accéder, il faut ajouter des crochets : ExcelData[x][y]
+Où "x" correspond à la ligne et "y" correspond à la colonne.
+
+Le tableau comporte une ligne d'en-tête, donc la première ligne de données est la ligne numéro 2 sur Excel. Dans ExcelData, elle correspond à x=0.
+x correspond donc au numéro de la ligne Excel moins 2.
+
+Pour y, plutôt que de raisonner par lettres pour les colonnes. On peut utiliser directement le titre de la colonne entre apostrophes. Les colonnes peuvent ainsi être déplacées sans problèmes.
+
+!!! Warning
+    Penser à bien mettre à jour la colonne de fin lorsque de nouvelles colonnes sont ajoutées à l'étape de lecture des données du fichier Excel.
 
 
-![Reprise Marchés SAFI - A_Initialisation - Lancer Excel](RepriseMarchesSAFI-A_Initialisation_LancerExcel)
+
+
+#### A_Initialisation - Se connecter à Grand Angle
 ![Reprise Marchés SAFI - A_Initialisation - Se connecter à Grand Angle](RepriseMarchesSAFI-A_Initialisation_ConnexionGrandAngle)
 
 ### B_CreationNouveauMarche
