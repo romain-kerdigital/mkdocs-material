@@ -51,11 +51,11 @@ document.getElementsbyId('test').value="Texte";
     Généralement on les retrouve dans le paramètre "onchange" de l'élément. Lorsque l'on change uniquement la valeur par script, les scripts qui se lançaient automatiquement ne se lancent pas. C'est notamment le cas pour tous les montants avec TVA calculée.
 
 Il existe deux méthode pour simuler la saisie manuelle :
-1.    Reprendre le script avec l'inspecteur
-2.    Lancer le script avec onchange()
+  1.  Reprendre le script avec l'inspecteur
+  2.  Lancer le script avec onchange()
 
 - [x] Lorem ipsum dolor sit amet, consectetur adipiscing elit
-- [ ] Vestibulum convallis sit amet nisi a tincidunt
+- [x] Vestibulum convallis sit amet nisi a tincidunt
     * [x] In hac habitasse platea dictumst
     * [x] In scelerisque nibh non dolor mollis congue sed et metus
     * [ ] Praesent sed risus massa
