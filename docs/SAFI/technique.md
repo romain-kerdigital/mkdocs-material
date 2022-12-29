@@ -26,7 +26,18 @@ L'automatisation démarre par une [Initialisation](#A_Initialisation) :
   - Fermer les applications ouvertes
   - Rouvrir les applications
   - Lire les données dans le fichier Excel
-  - 
+  - Se connecter sur Grand Angle
+
+Ensuite on démarre une boucle qui se répétera à chaque ligne du fichier Excel
+Tous les contractants sont sur la même ligne (jusqu'à 10 contractants, d'où le nombre important de colonnes)
+
+On continue avec l'étape de [création du marché](#B_CreationNouveauMarche)
+
+### A_Initialisation
+
+
+
+### B_CreationNouveauMarche
 
 
 
