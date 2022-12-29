@@ -20,7 +20,7 @@ Il permet de confirmer les étapes à paramétrer pour le robot en envisageant t
 
 ## Main
 
-![Reprise Marchés SAFI](RepriseMarchesSAFI-main.png)
+![Reprise Marchés SAFI - main](RepriseMarchesSAFI-main.png)
 
 L'automatisation démarre par une [Initialisation](#A_Initialisation) :
   - Fermer les applications ouvertes
@@ -34,7 +34,8 @@ Tous les contractants sont sur la même ligne (jusqu'à 10 contractants, d'où l
 On continue avec l'étape de [création du marché](#B_CreationNouveauMarche)
 
 ### A_Initialisation
-
+![Reprise Marchés SAFI - A_Initialisation](RepriseMarchesSAFI-A_Initialisation.png
+)
 
 
 ### B_CreationNouveauMarche
