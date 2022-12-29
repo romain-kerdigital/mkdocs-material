@@ -35,7 +35,11 @@ On continue avec l'étape de [création du marché](#B_CreationNouveauMarche)
 
 ### A_Initialisation
 ![Reprise Marchés SAFI - A_Initialisation](RepriseMarchesSAFI-A_Initialisation.png)
+![Reprise Marchés SAFI - A_Initialisation - Fermer les applications](RepriseMarchesSAFI-A_Initialisation_FermerApplications)
 
+
+![Reprise Marchés SAFI - A_Initialisation - Lancer Excel](RepriseMarchesSAFI-A_Initialisation_LancerExcel)
+![Reprise Marchés SAFI - A_Initialisation - Se connecter à Grand Angle](RepriseMarchesSAFI-A_Initialisation_ConnexionGrandAngle)
 
 ### B_CreationNouveauMarche
 
