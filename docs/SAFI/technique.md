@@ -54,10 +54,22 @@ Pour y, plutôt que de raisonner par lettres pour les colonnes. On peut utiliser
     Penser à bien mettre à jour la colonne de fin lorsque de nouvelles colonnes sont ajoutées à l'étape de lecture des données du fichier Excel.
 
 
-
-
 #### A_Initialisation - Se connecter à Grand Angle
 ![Reprise Marchés SAFI - A_Initialisation - Se connecter à Grand Angle](RepriseMarchesSAFI-A_Initialisation_ConnexionGrandAngle)
+On allume Microsoft Edge sur la page de connexion.
+
+Il peut arriver (surtout lors des tests) que l'on soit déjà connectés afin de poursuivre l'automatisation même dans un statut connecté, on vérifie l'URL.
+Si on est sur la page de connexion, l'URL de la page se termine par "login" on remplit alors les informations de connexion.
+Si on est redirigé automatiquement sur le tableau de bord, l'URL change et ne se termine plus par "login". Les étapes sont ignorées.
+
+Lors de la connexion, un bandeau s'affiche pour accepter les cookies. Pour le masquer, on ajoute ce script :
+
+``` javascript
+// Enlever bandeau
+document.cookie = "rgpdInfosHidden=1; path=/;";
+document.getElementsByClassName("mat-snack-bar-container")[0].style.display = "none";
+```
+
 
 ### B_CreationNouveauMarche
 
