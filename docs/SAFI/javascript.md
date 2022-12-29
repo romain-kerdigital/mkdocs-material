@@ -46,18 +46,13 @@ document.getElementsbyId('test').value="Texte";
 
 ```
 
-!!! note 
-Attention ! En remplissant manuellement certaines cases, des scripts se lancent automatiquement parfois. (Notamment sur des montants)
-Généralement on les retrouve dans le paramètre "onchange" de l'élément.
-Lorsque l'on change uniquement la valeur par script, les scripts qui se lançaient automatiquement ne se lancent pas.
-C'est notamment le cas pour tous les montants avec TVA calculée.
+!!! note
+    Attention ! En remplissant manuellement certaines cases, des scripts se lancent automatiquement parfois. (Notamment sur des montants)
+    Généralement on les retrouve dans le paramètre "onchange" de l'élément. Lorsque l'on change uniquement la valeur par script, les scripts qui se lançaient automatiquement ne se lancent pas. C'est notamment le cas pour tous les montants avec TVA calculée.
 
-!!! warning 
-
-Attention ! En remplissant manuellement certaines cases, des scripts se lancent automatiquement parfois. (Notamment sur des montants)
-Généralement on les retrouve dans le paramètre "onchange" de l'élément.
-Lorsque l'on change uniquement la valeur par script, les scripts qui se lançaient automatiquement ne se lancent pas.
-C'est notamment le cas pour tous les montants avec TVA calculée.
+!!! warning
+    Attention ! En remplissant manuellement certaines cases, des scripts se lancent automatiquement parfois. (Notamment sur des montants)
+    Généralement on les retrouve dans le paramètre "onchange" de l'élément. Lorsque l'on change uniquement la valeur par script, les scripts qui se lançaient automatiquement ne se lancent pas. C'est notamment le cas pour tous les montants avec TVA calculée.
 
 Il existe deux méthode pour simuler la saisie manuelle :
 1. Reprendre le script avec l'inspecteur
