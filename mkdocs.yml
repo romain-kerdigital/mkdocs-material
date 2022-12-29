@@ -165,7 +165,7 @@ markdown_extensions:
 nav:
   - Accueil: index.md
   - Reprise des marchés SAFI:
-    - Projet: SAFI/projet.md
+    - Technique (hors Javascript): SAFI/technique.md
     - Javascript: SAFI/javascript.md
 #- Getting started:
 #  - Installation: getting-started.md
