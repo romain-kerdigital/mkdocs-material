@@ -1,14 +1,9 @@
-# Contexte du projet
+# Projet : Migration de données de SAFI vers Grand Angle
 
-## Résumé
-
-Migration de données de SAFI vers Grand Angle.
+## Diagramme
 
 ![Reprise Marchés SAFI](RepriseMarchesSAFI-main.png)
 
-
-
-## Diagramme
 
 https://lucid.app/lucidchart/481ce2c2-3b15-4080-a4a7-5e4b729edab0/edit?viewport_loc=-3659%2C-1579%2C45266%2C27069%2C0_0&invitationId=inv_0482e918-03d2-4dc7-ac95-2fddd838edbc
 
