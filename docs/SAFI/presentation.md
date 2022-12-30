@@ -22,7 +22,7 @@ Il permet de confirmer les étapes à paramétrer pour le robot en envisageant t
 
 ![Reprise Marchés SAFI - main](RepriseMarchesSAFI-main.png)
 
-[A_Initialisation](/SAFI/A_Initialisation.md) :
+[A_Initialisation](/SAFI/A_Initialisation) :
   - Fermer les applications ouvertes
   - Lire les données dans le fichier Excel
   - Se connecter à Grand Angle
@@ -31,17 +31,17 @@ Il permet de confirmer les étapes à paramétrer pour le robot en envisageant t
 Ensuite on démarre une boucle qui se répétera à chaque ligne du fichier Excel
 Tous les contractants sont sur la même ligne (jusqu'à 10 contractants, d'où le nombre important de colonnes)
 
-[B_CreationNouveauMarche](/SAFI/#B_CreationNouveauMarche.md) :
+[B_CreationNouveauMarche](B_CreationNouveauMarche) :
 - Cliquer sur créer un nouveau marché et remplir les premières informations
 - Ajouter un type d'engagement
 - Remplir la forme et le type de prix
 - ...
 
-[C_CreationContractant](/SAFI/#C_CreationContractant.md) :
+[C_CreationContractant](/SAFI/C_CreationContractant/) :
 - ...
 - ...
 
-[D_FormulesActes](/SAFI/#D_FormulesActes.md) :
+[D_FormulesActes](/SAFI/D_FormulesActes) :
 - ...
 - ...
 
