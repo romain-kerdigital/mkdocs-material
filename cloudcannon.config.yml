@@ -6,12 +6,16 @@ collections_config:
     output: true
     url: "/[full_slug]/" # mkdocs' default url behavior for nested files
     disable_add: true
+    disable_add_folder: true
+    disable_file_actions: true
   MemoJavaScript:
     name: Mémo Javascript
     path: "docs/memo-javascript"
     output: true
     url: "/[full_slug]/" # mkdocs' default url behavior for nested files
     disable_add: true
+    disable_add_folder: true
+    disable_file_actions: true
 # Where CloudCannon should put new files, and how it should build URLs
 paths:
   uploads: "docs" # Put new files inside the docs folder
