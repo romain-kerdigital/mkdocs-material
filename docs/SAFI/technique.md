@@ -77,6 +77,10 @@ document.getElementsByClassName("mat-snack-bar-container")[0].style.display = "n
 ![Reprise Marchés SAFI - B_CreationNouveauMarche_3](RepriseMarchesSAFI-B_CreationNouveauMarche_3.png)
 ![Reprise Marchés SAFI - B_CreationNouveauMarche_4](RepriseMarchesSAFI-B_CreationNouveauMarche_4.png)
 
+#### Cliquer sur créer un nouveau marché et remplir les premières informations
+
+##### Cliquer sur les éléments du menu
+
 ```javascript
 //Cliquer sur les elements du menu
 document.getElementsByClassName("bouton-menu")[0].click()
@@ -84,12 +88,22 @@ document.getElementsByClassName("mat-focus-indicator bandeau__button mat-button 
 document.getElementsByClassName('menu ng-star-inserted')[0].click()
 document.getElementsByClassName('gda_bouton NouveauImg gda_bouton_actif')[0].click()
 ```
+
+##### Remplir la première page
 ```javascript
 //Remplir les informations sur le marché
 document.getElementsByName('marche_miAnnee')[0].value="%ExcelData[LoopIndex]['Numéro de marché - Année AAAA']%";
 document.getElementsByName('marche_msNumero')[0].value="%ExcelData[LoopIndex]['Numéro de marché - Code']%";
 document.getElementsByName('marche_msObjet')[0].value="%ExcelData[LoopIndex]['Objet']%";
 ```
+##### Cliquer sur Suivant
+
+On lance le javascript associé au bouton Suivant.
+
+```javascript
+effectuerSuivante()
+```
+##### Remplir la durée
 ```javascript
 // Duree
 document.getElementsByName('marcheDuree_miAnnees')[0].value="%ExcelData[LoopIndex]['Durée du marché - Années']%";
@@ -97,17 +111,54 @@ document.getElementsByName('marcheDuree_miMois')[0].value="%ExcelData[LoopIndex]
 document.getElementsByName('marcheDuree_miJours')[0].value="%ExcelData[LoopIndex]['Durée du marché - Jours']%";
 ```
 
+#### Ajouter un type d'engagement
+
+##### Cliquer sur la loupe Type d'engagement
+
+Plutôt que de cliquer sur la loupe directement, on lance le javascript associé.
+
 ```javascript
 // Cliquer sur la loupe Type d'engagement
 saisieAssisteeTypeEnga()
-// Plutôt que de cliquer sur la loupe directement, on lance le javascript associé.
 ```
 
+##### Attacher la nouvelle fenêtre de navigateur
 
+
+##### Remplir la code à rechercher
 
 ```javascript
-// Cliquer sur la loupe Type d'engagement
-saisieAssisteeTypeEnga()
+document.getElementsByName('typejCode')[0].value="%ExcelData[LoopIndex]['Type d\'engagement - Code']%";
+```
+
+##### Cliquer sur le bouton Rechercher
+
+On lance le script associé au bouton Rechercher
+```javascript
+rch_jsp_BoutonRechercher()
+```
+
+#### CLiquer sur le premier élément de la liste
+Ici, il n'y a pas de Name ou d'ID pour choisir l'élément à cliquer. On fait donc une recherche par TagName. Il s'agit du 5ème élément de la liste des "a" sur la page.
+```javascript
+document.getElementsByTagName('a')[4].click()
+```
+!!! note
+    Pour déduire la recherche par TagName à utiliser. Dans l'inspecteur il faut regarder le type d'élément. Ici il s'agit d'un lien "a". On recherche ensuite par itération avec la console :
+    ```javascript
+      document.getElementsByTagName('a')[0].click()
+      document.getElementsByTagName('a')[1].click()
+      document.getElementsByTagName('a')[2].click()
+      document.getElementsByTagName('a')[3].click()
+      document.getElementsByTagName('a')[4].click()
+    ```
+
+```javascript
+
+```
+
+```javascript
+
 ```
 
 
