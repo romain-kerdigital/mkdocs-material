@@ -18,11 +18,11 @@ Il permet de confirmer les étapes à paramétrer pour le robot en envisageant t
 
 [Lien vers le diagramme LucidChart](https://lucid.app/lucidchart/481ce2c2-3b15-4080-a4a7-5e4b729edab0/edit?viewport_loc=-3659%2C-1579%2C45266%2C27069%2C0_0&invitationId=inv_0482e918-03d2-4dc7-ac95-2fddd838edbc)
 
-## Main
+## Procédure
 
 [Reprise Marchés SAFI - main](RepriseMarchesSAFI-main.png)
 
-L'automatisation démarre par une ![Initialisation](./#A_Initialisation) :
+![A_Initialisation](A_Initialisation.md) :
   - Fermer les applications ouvertes
   - Lire les données dans le fichier Excel
   - Se connecter à Grand Angle
@@ -31,7 +31,18 @@ L'automatisation démarre par une ![Initialisation](./#A_Initialisation) :
 Ensuite on démarre une boucle qui se répétera à chaque ligne du fichier Excel
 Tous les contractants sont sur la même ligne (jusqu'à 10 contractants, d'où le nombre important de colonnes)
 
-On continue avec l'étape de [création du marché](/#B_CreationNouveauMarche) :
+[B_CreationNouveauMarche](#B_CreationNouveauMarche.md) :
 - Cliquer sur créer un nouveau marché et remplir les premières informations
 - Ajouter un type d'engagement
 - Remplir la forme et le type de prix
+
+[C_CreationContractant](#C_CreationContractant.md) :
+
+[D_FormulesActes](#D_FormulesActes.md) :
+
+[E_RapportExecution](#E_RapportExecution.md) :
+
+[F_Finalisation](#F_Finalisation.md) :
+- Fermer applications en cours
+
+[G_RapportErreur](#G_RapportErreur.md) :
