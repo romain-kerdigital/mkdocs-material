@@ -138,28 +138,43 @@ On lance le script associé au bouton Rechercher
 rch_jsp_BoutonRechercher()
 ```
 
-#### CLiquer sur le premier élément de la liste
+##### CLiquer sur le premier élément de la liste
 Ici, il n'y a pas de Name ou d'ID pour choisir l'élément à cliquer. On fait donc une recherche par TagName. Il s'agit du 5ème élément de la liste des "a" sur la page.
 ```javascript
 document.getElementsByTagName('a')[4].click()
 ```
 !!! note
-    Pour déduire la recherche par TagName à utiliser. Dans l'inspecteur il faut regarder le type d'élément. Ici il s'agit d'un lien "a". On recherche ensuite par itération avec la console :
+    Pour déduire la recherche par TagName à utiliser. Dans l'inspecteur il faut regarder le type d'élément. Ici il s'agit d'un lien "a". On recherche ensuite par itération avec la console jusqu'à ce que notre élément soit sélectionné:
     ```javascript
-      document.getElementsByTagName('a')[0].click()
-      document.getElementsByTagName('a')[1].click()
-      document.getElementsByTagName('a')[2].click()
-      document.getElementsByTagName('a')[3].click()
-      document.getElementsByTagName('a')[4].click()
+      document.getElementsByTagName('a')[0]
+      document.getElementsByTagName('a')[1]
+      document.getElementsByTagName('a')[2]
+      document.getElementsByTagName('a')[3]
+      document.getElementsByTagName('a')[4]
     ```
 
+#### Remplir la forme et le type de prix
+##### Forme de prix
+Il s'agit d'un menu déroulant, mais on peut valoriser la valeur comme un champ de texte.
 ```javascript
-
+// Forme de prix
+document.getElementsByName('formePrix_miCode')[0].value="%ExcelData[LoopIndex]['Forme de prix - Code']%";
 ```
 
-```javascript
+!!! note
+    Pour simplifier l'automatisation, tous les choix possibles sont rassemblés dans la feuille "Listes" sur Excel avec la correspondance avec le code sur Grand Angle.
+    Une colonne a ensuite été ajoutée sur la feuille principale en utilisant RECHERCHEV() qui affiche directement le code qui correspond à l'option à sélectionner.
 
+##### Type de prix
+
+Il s'agit d'un bouton radio, mais on peut valoriser la valeur comme un champ de texte.
+```javascript
+// Type de prix
+document.getElementsByName('typePrix_miCode')[0].value="%ExcelData[LoopIndex]['Type de prix - Code']%";
 ```
+
+Après avoir sélectionné le type de prix, de nouvelles cases s'affichent.
+
 
 
 ## Annexes
