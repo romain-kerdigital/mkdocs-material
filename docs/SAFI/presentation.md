@@ -6,7 +6,7 @@ Un fichier Excel Online pour favoriser un travail collaboratif entre la DFP et l
 
 Les modifications sont traitées en temps réel avec les données à jour pour permettre à la DFP de mettre à jour les valeurs et que la RPA puisse continuer les tests au fur et à mesure.
 
-Le fichier Excel comporte environ 200 colonnes. Elles sont détaillées en [Annexe](#donnees-excel-projet-reprise-des-marches-safi)
+Le fichier Excel comporte environ 200 colonnes. Elles sont détaillées en [Annexes](/SAFI/annexes)
 
 [Lien vers le fichier Excel](https://1drv.ms/x/s!AmiJK4RIVLBXgSBT9GcikC_QRGv6?e=z07vII)
 
