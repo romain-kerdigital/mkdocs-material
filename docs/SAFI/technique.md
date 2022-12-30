@@ -34,12 +34,12 @@ Tous les contractants sont sur la même ligne (jusqu'à 10 contractants, d'où l
 On continue avec l'étape de ![création du marché](#B_CreationNouveauMarche)
 
 
-### A_Initialisation
+## A_Initialisation
 ![Reprise Marchés SAFI - A_Initialisation](RepriseMarchesSAFI-A_Initialisation.png)
-#### A_Initialisation - Fermer les applications
+### A_Initialisation - Fermer les applications
 ![Reprise Marchés SAFI - A_Initialisation - Fermer les applications ouvertes](RepriseMarchesSAFI-A_Initialisation_FermerApplications.png)
 
-#### A_Initialisation - Lire les données dans le fichier Excel
+### A_Initialisation - Lire les données dans le fichier Excel
 ![Reprise Marchés SAFI - A_Initialisation - Lire les données dans le fichier Excel](RepriseMarchesSAFI-A_Initialisation_LancerExcel.png)
 Les données sont stockées dans ExcelData.
 Pour y accéder, il faut ajouter des crochets : ExcelData[x][y]
@@ -54,7 +54,7 @@ Pour y, plutôt que de raisonner par lettres pour les colonnes. On peut utiliser
     Penser à bien mettre à jour la colonne de fin lorsque de nouvelles colonnes sont ajoutées à l'étape de lecture des données du fichier Excel.
 
 
-#### A_Initialisation - Se connecter à Grand Angle
+### A_Initialisation - Se connecter à Grand Angle
 ![Reprise Marchés SAFI - A_Initialisation - Se connecter à Grand Angle](RepriseMarchesSAFI-A_Initialisation_ConnexionGrandAngle.png)
 On allume Microsoft Edge sur la page de connexion.
 
@@ -71,15 +71,15 @@ document.getElementsByClassName("mat-snack-bar-container")[0].style.display = "n
 ```
 
 
-### B_CreationNouveauMarche
+## B_CreationNouveauMarche
 ![Reprise Marchés SAFI - B_CreationNouveauMarche_1](RepriseMarchesSAFI-B_CreationNouveauMarche_1.png)
 ![Reprise Marchés SAFI - B_CreationNouveauMarche_2](RepriseMarchesSAFI-B_CreationNouveauMarche_2.png)
 ![Reprise Marchés SAFI - B_CreationNouveauMarche_3](RepriseMarchesSAFI-B_CreationNouveauMarche_3.png)
 ![Reprise Marchés SAFI - B_CreationNouveauMarche_4](RepriseMarchesSAFI-B_CreationNouveauMarche_4.png)
 
-#### Cliquer sur créer un nouveau marché et remplir les premières informations
+### Cliquer sur créer un nouveau marché et remplir les premières informations
 
-##### Cliquer sur les éléments du menu
+#### Cliquer sur les éléments du menu
 
 ```javascript
 //Cliquer sur les elements du menu
@@ -89,21 +89,21 @@ document.getElementsByClassName('menu ng-star-inserted')[0].click()
 document.getElementsByClassName('gda_bouton NouveauImg gda_bouton_actif')[0].click()
 ```
 
-##### Remplir la première page
+#### Remplir la première page
 ```javascript
 //Remplir les informations sur le marché
 document.getElementsByName('marche_miAnnee')[0].value="%ExcelData[LoopIndex]['Numéro de marché - Année AAAA']%";
 document.getElementsByName('marche_msNumero')[0].value="%ExcelData[LoopIndex]['Numéro de marché - Code']%";
 document.getElementsByName('marche_msObjet')[0].value="%ExcelData[LoopIndex]['Objet']%";
 ```
-##### Cliquer sur Suivant
+#### Cliquer sur Suivant
 
 On lance le javascript associé au bouton Suivant.
 
 ```javascript
 effectuerSuivante()
 ```
-##### Remplir la durée
+#### Remplir la durée
 ```javascript
 // Duree
 document.getElementsByName('marcheDuree_miAnnees')[0].value="%ExcelData[LoopIndex]['Durée du marché - Années']%";
@@ -111,9 +111,9 @@ document.getElementsByName('marcheDuree_miMois')[0].value="%ExcelData[LoopIndex]
 document.getElementsByName('marcheDuree_miJours')[0].value="%ExcelData[LoopIndex]['Durée du marché - Jours']%";
 ```
 
-#### Ajouter un type d'engagement
+### Ajouter un type d'engagement
 
-##### Cliquer sur la loupe Type d'engagement
+#### Cliquer sur la loupe Type d'engagement
 
 Plutôt que de cliquer sur la loupe directement, on lance le javascript associé.
 
@@ -122,23 +122,23 @@ Plutôt que de cliquer sur la loupe directement, on lance le javascript associé
 saisieAssisteeTypeEnga()
 ```
 
-##### Attacher la nouvelle fenêtre de navigateur
+#### Attacher la nouvelle fenêtre de navigateur
 
 
-##### Remplir la code à rechercher
+#### Remplir la code à rechercher
 
 ```javascript
 document.getElementsByName('typejCode')[0].value="%ExcelData[LoopIndex]['Type d\'engagement - Code']%";
 ```
 
-##### Cliquer sur le bouton Rechercher
+#### Cliquer sur le bouton Rechercher
 
 On lance le script associé au bouton Rechercher
 ```javascript
 rch_jsp_BoutonRechercher()
 ```
 
-##### CLiquer sur le premier élément de la liste
+#### CLiquer sur le premier élément de la liste
 Ici, il n'y a pas de Name ou d'ID pour choisir l'élément à cliquer. On fait donc une recherche par TagName. Il s'agit du 5ème élément de la liste des "a" sur la page.
 ```javascript
 document.getElementsByTagName('a')[4].click()
@@ -153,8 +153,8 @@ document.getElementsByTagName('a')[4].click()
       document.getElementsByTagName('a')[4]
     ```
 
-#### Remplir la forme et le type de prix
-##### Forme de prix
+### Remplir la forme et le type de prix
+#### Forme de prix
 Il s'agit d'un menu déroulant, mais on peut valoriser la valeur comme un champ de texte.
 ```javascript
 // Forme de prix
@@ -165,7 +165,7 @@ document.getElementsByName('formePrix_miCode')[0].value="%ExcelData[LoopIndex]['
     Pour simplifier l'automatisation, tous les choix possibles sont rassemblés dans la feuille "Listes" sur Excel avec la correspondance avec le code sur Grand Angle.
     Une colonne a ensuite été ajoutée sur la feuille principale en utilisant RECHERCHEV() qui affiche directement le code qui correspond à l'option à sélectionner.
 
-##### Type de prix
+#### Type de prix
 
 Il s'agit d'un bouton radio, mais on peut valoriser la valeur comme un champ de texte.
 ```javascript
