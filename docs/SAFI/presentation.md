@@ -35,14 +35,24 @@ Tous les contractants sont sur la même ligne (jusqu'à 10 contractants, d'où l
 - Cliquer sur créer un nouveau marché et remplir les premières informations
 - Ajouter un type d'engagement
 - Remplir la forme et le type de prix
+- ...
 
 [C_CreationContractant](#C_CreationContractant.md) :
+- ...
+- ...
 
 [D_FormulesActes](#D_FormulesActes.md) :
+- ...
+- ...
+
 
 [E_RapportExecution](#E_RapportExecution.md) :
+- Récupérer informations
+- Ecrire informations dans Excel
 
 [F_Finalisation](#F_Finalisation.md) :
 - Fermer applications en cours
 
 [G_RapportErreur](#G_RapportErreur.md) :
+- Récupérer informations
+- Ecrire informations dans Excel
