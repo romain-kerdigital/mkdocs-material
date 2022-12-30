@@ -165,8 +165,15 @@ markdown_extensions:
 nav:
   - Accueil: index.md
   - Reprise des marchés SAFI:
-    - Technique (hors Javascript): SAFI/technique.md
-    - Javascript: SAFI/javascript.md
+    - Présentation: SAFI/technique.md
+    - A_Initialisation: SAFI/A_Initialisation.md
+    - B_CreationNouveauMarche: SAFI/B_CreationNouveauMarche.md
+    - C_CreationContractant: SAFI/C_CreationContractant.md
+    - D_FormulesActes: SAFI/D_FormulesActes.md
+    - E_RapportExecution: SAFI/E_RapportExecution.md
+    - F_Finalisation: SAFI/F_Finalisation.md
+    - G_RapportErreur: SAFI/G_RapportErreur.md
+    - Mémo Javascript: SAFI/javascript.md
 #- Getting started:
 #  - Installation: getting-started.md
 #  - Creating your site: creating-your-site.md
