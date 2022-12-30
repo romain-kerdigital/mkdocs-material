@@ -20,9 +20,9 @@ Il permet de confirmer les étapes à paramétrer pour le robot en envisageant t
 
 ## Procédure
 
-[Reprise Marchés SAFI - main](RepriseMarchesSAFI-main.png)
+![Reprise Marchés SAFI - main](RepriseMarchesSAFI-main.png)
 
-![A_Initialisation](A_Initialisation.md) :
+[A_Initialisation](/SAFI/A_Initialisation.md) :
   - Fermer les applications ouvertes
   - Lire les données dans le fichier Excel
   - Se connecter à Grand Angle
@@ -31,28 +31,28 @@ Il permet de confirmer les étapes à paramétrer pour le robot en envisageant t
 Ensuite on démarre une boucle qui se répétera à chaque ligne du fichier Excel
 Tous les contractants sont sur la même ligne (jusqu'à 10 contractants, d'où le nombre important de colonnes)
 
-[B_CreationNouveauMarche](#B_CreationNouveauMarche.md) :
+[B_CreationNouveauMarche](/SAFI/#B_CreationNouveauMarche.md) :
 - Cliquer sur créer un nouveau marché et remplir les premières informations
 - Ajouter un type d'engagement
 - Remplir la forme et le type de prix
 - ...
 
-[C_CreationContractant](#C_CreationContractant.md) :
+[C_CreationContractant](/SAFI/#C_CreationContractant.md) :
 - ...
 - ...
 
-[D_FormulesActes](#D_FormulesActes.md) :
+[D_FormulesActes](/SAFI/#D_FormulesActes.md) :
 - ...
 - ...
 
 
-[E_RapportExecution](#E_RapportExecution.md) :
+[E_RapportExecution](/SAFI/#E_RapportExecution.md) :
 - Récupérer informations
 - Ecrire informations dans Excel
 
-[F_Finalisation](#F_Finalisation.md) :
+[F_Finalisation](/SAFI/#F_Finalisation.md) :
 - Fermer applications en cours
 
-[G_RapportErreur](#G_RapportErreur.md) :
+[G_RapportErreur](/SAFI/#G_RapportErreur.md) :
 - Récupérer informations
 - Ecrire informations dans Excel
