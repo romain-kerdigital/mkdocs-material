@@ -24,9 +24,9 @@ Il permet de confirmer les étapes à paramétrer pour le robot en envisageant t
 
 [A_Initialisation](/SAFI/A_Initialisation) :
 
-    - Fermer les applications ouvertes
-    - Lire les données dans le fichier Excel
-    - Se connecter à Grand Angle
+  - Fermer les applications ouvertes
+  - Lire les données dans le fichier Excel
+  - Se connecter à Grand Angle
 
 
 Ensuite on démarre une boucle qui se répétera à chaque ligne du fichier Excel
@@ -34,32 +34,32 @@ Tous les contractants sont sur la même ligne (jusqu'à 10 contractants, d'où l
 
 [B_CreationNouveauMarche](/SAFI/B_CreationNouveauMarche) :
 
-    - Cliquer sur créer un nouveau marché et remplir les premières informations
-    - Ajouter un type d'engagement
-    - Remplir la forme et le type de prix
-    - ...
+  - Cliquer sur créer un nouveau marché et remplir les premières informations
+  - Ajouter un type d'engagement
+  - Remplir la forme et le type de prix
+  - ...
 
 [C_CreationContractant](/SAFI/C_CreationContractant) :
 
-    - ...
-    - ...
+  - ...
+  - ...
 
 [D_FormulesActes](/SAFI/D_FormulesActes) :
 
-    - ...
-    - ...
+  - ...
+  - ...
 
 
 [E_RapportExecution](/SAFI/E_RapportExecution) :
 
-    - Récupérer informations
-    - Ecrire informations dans Excel
+  - Récupérer informations
+  - Ecrire informations dans Excel
 
 [F_Finalisation](/SAFI/F_Finalisation) :
 
-    - Fermer applications en cours
+  - Fermer applications en cours
 
 [G_RapportErreur](/SAFI/G_RapportErreur) :
 
-    - Récupérer informations
-    - Ecrire informations dans Excel
+  - Récupérer informations
+  - Ecrire informations dans Excel
