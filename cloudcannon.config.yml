@@ -5,12 +5,17 @@ collections_config:
     path: "docs/SAFI"
     output: true
     url: "/[full_slug]/" # mkdocs' default url behavior for nested files
+    disable_add: true
   MemoJavaScript:
     name: Mémo Javascript
     path: "docs/memo-javascript"
     output: true
     url: "/[full_slug]/" # mkdocs' default url behavior for nested files
-
+    disable_add: true
+# Where CloudCannon should put new files, and how it should build URLs
+paths:
+  uploads: "docs" # Put new files inside the docs folder
+  static: "docs" # Reference files in the docs folder as /<file>
 
 # The available buttons in the CloudCannon Content Editor
 _editables:
