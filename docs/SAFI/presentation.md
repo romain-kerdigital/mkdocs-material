@@ -33,3 +33,4 @@ Tous les contractants sont sur la même ligne (jusqu'à 10 contractants, d'où l
 
 On continue avec l'étape de [création du marché](/#B_CreationNouveauMarche) :
 - Cliquer sur créer un nouveau marché et remplir les premières informations
+- Ajouter un type d'engagement
