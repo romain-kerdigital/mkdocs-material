@@ -81,7 +81,7 @@ document.getElementsByTagName('a')[4].click()
       document.getElementsByTagName('a')[4]
     ```
 
-## Remplir la forme et le type de prix
+## Remplir la forme, le type de prix et leur date d'établissement
 ### Forme de prix
 Il s'agit d'un menu déroulant, mais on peut valoriser la valeur comme un champ de texte.
 ```javascript
@@ -102,3 +102,13 @@ document.getElementsByName('typePrix_miCode')[0].value="%ExcelData[LoopIndex]['T
 ```
 
 Après avoir sélectionné le type de prix, de nouvelles cases s'affichent.
+
+
+
+## Choisir le Code CPV
+## Remplir les Montants
+## Remplir Mode de passation, dévolution et la gestion de la retenue de garantie
+## Définir l'auto-liquidation de la sous-traitance
+## Reconduction
+## Définir les dates de consultation, de signature
+## Délai de liquidation et fin du flux
