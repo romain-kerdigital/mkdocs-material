@@ -36,13 +36,36 @@ Contractant %LoopIndexContractant% - Rôle - Code
 document.getElementsByName('contractantRole_msIdentif')[0].value="%ExcelData[LoopIndex][ColonneContractant]%";
 ```
 
-Si le rôle est mandataire
+```javascript
+Si le rôle est mandataire :
+%ExcelData[LoopIndex][ColonneContractant]% = MA
+```
 
 ```javascript
 Contractant %LoopIndexContractant% - Mandataire - Désignation
 ```
 
+
+
+## Tiers
+
 ```javascript
 // Remplir Désignation
 document.getElementsByName('contractantMsDesignationGroupementMandataire')[0].value="%ExcelData[LoopIndex][ColonneContractant]%";
+```
+
+### Références bancaires
+
+```javascript
+// Cliquer sur la loupe
+saisieAssisteeReferenceBancaire('contractantTiers_miCode', 'contracantRefBancaireTiers_miCode', 'contractantRefBancaire_miCode', 'contractantRefBancaire_msLib');
+```
+
+Attacher le navigateur
+http://garec.cg29.local/intranet/glob/sass/recherchePopupRefTiers.gda
+
+```javascript
+// Obtenir le nombre de résultats
+nb=document.getElementsByTagName('strong').length-3;
+return nb;
 ```
