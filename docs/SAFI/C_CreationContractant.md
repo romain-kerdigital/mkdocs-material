@@ -38,6 +38,9 @@ Contractant %LoopIndexContractant% - Rôle - Code
 document.getElementsByName('contractantRole_msIdentif')[0].value="%ExcelData[LoopIndex][ColonneContractant]%";
 ```
 
+### Si rôle Mandataire
+![Reprise Marchés SAFI - C_CreationNouveauContractant Mandataire](RepriseMarchesSAFI-C_CreationNouveauContractant_Mandataire.png)
+
 ```javascript
 Si le rôle est mandataire :
 %ExcelData[LoopIndex][ColonneContractant]% = MA
