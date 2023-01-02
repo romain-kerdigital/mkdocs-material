@@ -71,11 +71,15 @@ http://garec.cg29.local/intranet/glob/sass/recherchePopupRefTiers.gda
 
 Plusieurs références bancaires peuvent apparaître. Il faut choisir celle qui correspond et retourner un message d'erreur lorsque la référence bancaire n'est pas enregistrée.
 
+![Reprise Marchés SAFI - C_CreationNouveauContractant Banque](RepriseMarchesSAFI-C_CreationNouveauContractant_Banque.png)
+
 On récupère le nombre total d'éléments en "gras".
 Il y a 4 éléments en gras par ligne, on récupère le nombre d'éléments dans la liste des éléments en gras sur la fenêtre.
 Le bouton à cliquer est le premier élément de la ligne sur un modulo 4.
 Le dernier élément sélectionnable est donc le dernier élément moins 3.
 On stocke cette valeur dans une variable "MaxIterations"
+
+
 
 ```javascript
 // Obtenir le nombre de résultats
