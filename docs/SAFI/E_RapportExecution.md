@@ -14,3 +14,7 @@
 - Colonne B : Heure
 - Colonne C : Base
 - Colonne D : "Traité
+
+On arrive à la fin de la boucle. S'il reste des lignes à traiter, on peut continuer avec le flux B_CreationMarche.
+
+Si on arrive à la dernière ligne, on lance le flux F_Finalisation.
