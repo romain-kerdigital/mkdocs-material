@@ -13,6 +13,7 @@ chargerPage('../../intranet/marc/CreerContractant.gda', event)
 
 Etant donné qu'il y a le numéro du contractant variable dans le nom de colonne, par précaution, on assigne une nouvelle variable : "Colonne Contractant" qui contient le numéro dynamique du contractant :
 ```
+Variable "Colonne Contractant"
 Contractant %LoopIndexContractant% - Tiers - Code
 ```
 
@@ -22,4 +23,10 @@ document.getElementsByName('contractantTiers_miCode')[0].value="%ExcelData[LoopI
 ```
 ```javascript
 lancerAllerRetourRPCTiers(document.forms[0], 'contractantTiers_miCode', 'contractantTiers_msLib', 'contractantRefBancaire_miCode', 'contractantRefBancaire_msLib', 'contractantTiers_miCode', null, 'callbackRetourARTiers','contracantRefBancaireTiers_miCode','contracantRefBancaireTiers_msLibelle','provenance');
+```
+
+
+```
+Variable "Colonne Contractant"
+Contractant %LoopIndexContractant% - Rôle - Code
 ```
