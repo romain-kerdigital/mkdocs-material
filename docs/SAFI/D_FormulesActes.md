@@ -63,13 +63,14 @@ On lance le javascript du bouton "Retour".
 Retour(00, "../../intranet/marc/ChargerRechercheMarche.gda?favCode=145&IDG=1&ignorerIDIP=1&ignorerIDIP=1&onglet=2&histoaction=-1")
 ```
 
-On lance le javascript du bouton "Retour".
+
 ```javascript
-rch_jsp_BoutonRetour();
+h_jsp_BoutonRetour();
 ```
 
 On lance le javascript du bouton "Retour".
 ```javascript
 rch_jsp_BoutonRetour();
 ```
+
 
