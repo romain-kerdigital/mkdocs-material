@@ -18,7 +18,7 @@ Etant donné qu'il y a le numéro du contractant variable dans le nom de colonne
 Variable "Colonne Contractant"
 Contractant %LoopIndexContractant% - Tiers - Code
 ```
-
+## Tiers
 ```javascript
 // Remplir le Code Tiers
 document.getElementsByName('contractantTiers_miCode')[0].value="%ExcelData[LoopIndex][ColonneContractant]%";
@@ -52,7 +52,7 @@ Contractant %LoopIndexContractant% - Mandataire - Désignation
 
 
 
-## Tiers
+
 
 ```javascript
 // Remplir Désignation
@@ -103,7 +103,19 @@ str2=str.substring(4,31);
 return str2;
 ```
 
-On a 
+ColonneContractantValeur
+%ExcelData[LoopIndex][ColonneContractant]%
+
+Si IbanTest = ColonneContractantValeur
+On définit la variable : IterationFinaleBanque = %(LoopIndexBanque - 1) / 4%
+Et on sort de la boucle.
+
+On poursuit la boucle jusqu'à ce que la valeur corresponde
+
+Si on arrive au bout de MaxIterationBanques et que la valeur ne correspond pas,
+On définit la variable "Erreur" avec comme valeur : "IBAN non attaché au tiers"
+Et on lance le flux G_RapportErreur avant d'arrêter l'automatisation.
+
 
 
 ## Montants
