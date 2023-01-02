@@ -35,12 +35,13 @@ Retour(00, "../../intranet/marc/AfficheMarche.gda?cas=4&IDG=1&IDG=1&IDIP=IDIP_16
 ```
 
 ## Créer un acte
+On clique sur le bouton "Créer un acte"
 
 ```javascript
 // Creer un acte
 chargerPage('../../intranet/marc/CreerActe.gda', event);
 ```
-
+On valorise les dates enregistrées dans le fichier Excel.
 ```javascript
 // Ajouter dates
 document.getElementsByName('acte_mdtEffet')[0].value="%ExcelData[LoopIndex]['Notification du marché - Date d\'effet']%";
