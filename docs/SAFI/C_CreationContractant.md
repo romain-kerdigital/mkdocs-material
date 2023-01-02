@@ -30,3 +30,9 @@ lancerAllerRetourRPCTiers(document.forms[0], 'contractantTiers_miCode', 'contrac
 Variable "Colonne Contractant"
 Contractant %LoopIndexContractant% - Rôle - Code
 ```
+
+```javascript
+// Remplir le rôle
+document.getElementsByName('contractantRole_msIdentif')[0].value="%ExcelData[LoopIndex][ColonneContractant]%";
+```
+
