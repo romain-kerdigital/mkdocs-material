@@ -69,3 +69,8 @@ http://garec.cg29.local/intranet/glob/sass/recherchePopupRefTiers.gda
 nb=document.getElementsByTagName('strong').length-3;
 return nb;
 ```
+
+Convertir le texte en nombre
+
+Colonne contractant :
+Contractant %LoopIndexContractant% - Iban à créditer
