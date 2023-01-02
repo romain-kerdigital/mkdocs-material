@@ -1,11 +1,14 @@
 # Reprise des marchés SAFI - C_CreationContractant
 
 ![Reprise Marchés SAFI - C_CreationNouveauContractant Diagramme](RepriseMarchesSAFI-C_CreationNouveauContractant_Diagramme.png)
-
+## Cliquer sur les boutons
+Cliquer sur l'onglet "Détails"
 ```javascript
 //Cliquer sur l'onglet détails
 ChangerOnglet(2);
 ```
+
+Cliquer sur "Créer un contractant"
 ```javascript
 // Créer un contractant
 chargerPage('../../intranet/marc/CreerContractant.gda', event)
@@ -18,41 +21,44 @@ Etant donné qu'il y a le numéro du contractant variable dans le nom de colonne
 Variable "Colonne Contractant"
 Contractant %LoopIndexContractant% - Tiers - Code
 ```
-## Tiers
+## Identification du Contractant
+### Remplir le Code Tiers
 ```javascript
 // Remplir le Code Tiers
 document.getElementsByName('contractantTiers_miCode')[0].value="%ExcelData[LoopIndex][ColonneContractant]%";
 ```
+Après avoir saisi le code Tiers, il faut lancer les scripts qui se chargent habituellement lors du changement dans la case.
 ```javascript
 lancerAllerRetourRPCTiers(document.forms[0], 'contractantTiers_miCode', 'contractantTiers_msLib', 'contractantRefBancaire_miCode', 'contractantRefBancaire_msLib', 'contractantTiers_miCode', null, 'callbackRetourARTiers','contracantRefBancaireTiers_miCode','contracantRefBancaireTiers_msLibelle','provenance');
 ```
+### Remplir le rôle du Contractant
+Le rôle peut être : Titulaire, Sous-traitant ou Mandataire
 
-
+Définir la Colonne Contractant : Rôle du Tiers
 ```
 Variable "Colonne Contractant"
 Contractant %LoopIndexContractant% - Rôle - Code
 ```
 
+La liste des rôles et leurs indexs respectifs sont renseignés dans Excel. Il suffit d'attribuer la valeur.
 ```javascript
 // Remplir le rôle
 document.getElementsByName('contractantRole_msIdentif')[0].value="%ExcelData[LoopIndex][ColonneContractant]%";
 ```
 
-### Si rôle Mandataire
+#### Si le rôle est Mandataire
 ![Reprise Marchés SAFI - C_CreationNouveauContractant Mandataire](RepriseMarchesSAFI-C_CreationNouveauContractant_Mandataire.png)
-
-```javascript
 Si le rôle est mandataire :
+```javascript
 %ExcelData[LoopIndex][ColonneContractant]% = MA
 ```
 
+On sélectionne la ColonneContractant suivante :
 ```javascript
 Contractant %LoopIndexContractant% - Mandataire - Désignation
 ```
 
-
-
-
+On remplit ensuite la colonne "Désignation du mandataire"
 
 ```javascript
 // Remplir Désignation
@@ -61,6 +67,8 @@ document.getElementsByName('contractantMsDesignationGroupementMandataire')[0].va
 
 ### Références bancaires
 
+#### Cliquer sur la loupe et attacher le navigateur
+
 ```javascript
 // Cliquer sur la loupe
 saisieAssisteeReferenceBancaire('contractantTiers_miCode', 'contracantRefBancaireTiers_miCode', 'contractantRefBancaire_miCode', 'contractantRefBancaire_msLib');
@@ -68,6 +76,8 @@ saisieAssisteeReferenceBancaire('contractantTiers_miCode', 'contracantRefBancair
 
 Attacher le navigateur
 http://garec.cg29.local/intranet/glob/sass/recherchePopupRefTiers.gda
+
+#### Choisir la bonne référence bancaire
 
 Plusieurs références bancaires peuvent apparaître. Il faut choisir celle qui correspond et retourner un message d'erreur lorsque la référence bancaire n'est pas enregistrée.
 
@@ -80,13 +90,11 @@ Le dernier élément sélectionnable est donc le dernier élément moins 3.
 On stocke cette valeur dans une variable "MaxIterations"
 
 
-
 ```javascript
 // Obtenir le nombre de résultats
 nb=document.getElementsByTagName('strong').length-3;
 return nb;
 ```
-
 
 Le résultat stocké n'est pas automatquement reconnu en nombre. On convertit donc "MaxIterations" en nombre "MaxIterationsBanque" pour permettre des itérations.
 
@@ -117,8 +125,8 @@ On définit la variable "Erreur" avec comme valeur : "IBAN non attaché au tiers
 Et on lance le flux G_RapportErreur avant d'arrêter l'automatisation.
 
 
-
 ## Montants
 
 
 Contractant %LoopIndexContractant% - Montant prévisionnel HT
+
