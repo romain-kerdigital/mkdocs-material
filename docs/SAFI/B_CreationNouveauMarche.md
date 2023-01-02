@@ -101,9 +101,27 @@ Il s'agit d'un bouton radio, mais on peut valoriser la valeur comme un champ de 
 document.getElementsByName('typePrix_miCode')[0].value="%ExcelData[LoopIndex]['Type de prix - Code']%";
 ```
 
-Après avoir sélectionné le type de prix, de nouvelles cases s'affichent.
+Après avoir sélectionné le type de prix, de nouvelles cases s'affichent si le type de prix n'est pas ferme.
 
+#### Type de prix "Révisables" ou "Fermes actualisables"
 
+On coche le type d'index
+
+##### Type de prix "Fermes actualisables"
+
+On définit la date d'actualisation des prix
+
+##### Type de prix "Révisables"
+
+On définit la périodicité de révision
+
+###### Si "sur index définitif sans révision provisoire"
+
+On renseigne le "décalage de lecture" qui correspond à un nombre de mois.
+
+### Date d'établissement des prix
+
+On renseigne ensuite la date d'établissement des prix.
 
 ## Choisir le Code CPV
 ## Remplir les Montants
