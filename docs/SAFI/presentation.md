@@ -45,8 +45,8 @@ Tous les contractants sont sur la même ligne (jusqu'à 10 contractants, d'où l
 
 ### D_FormulesActes
 
-  - ...
-  - ...
+  - Créer une formule de variation
+  - Créer un acte
 
 ### E_RapportExecution
 
