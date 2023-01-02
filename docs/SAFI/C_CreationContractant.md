@@ -12,6 +12,8 @@ chargerPage('../../intranet/marc/CreerContractant.gda', event)
 ```
 
 Etant donné qu'il y a le numéro du contractant variable dans le nom de colonne, par précaution, on assigne une nouvelle variable : "Colonne Contractant" qui contient le numéro dynamique du contractant :
+![Reprise Marchés SAFI - C_CreationNouveauContractant Colonne Contractant](RepriseMarchesSAFI-C_CreationNouveauContractant_ColonneContractant.png)
+
 ```
 Variable "Colonne Contractant"
 Contractant %LoopIndexContractant% - Tiers - Code
