@@ -35,13 +35,21 @@ Tous les contractants sont sur la même ligne (jusqu'à 10 contractants, d'où l
 
   - Cliquer sur créer un nouveau marché et remplir les premières informations
   - Ajouter un type d'engagement
-  - Remplir la forme et le type de prix
-  - ...
+  - Remplir la forme, le type de prix et leur date d'établissement
+  - Choisir le Code CPV
+  - Remplir les Montants
+  - Remplir Mode de passation, dévolution et la gestion de la retenue de garantie
+  - Définir l'auto-liquidation de la sous-traitance
+  - Reconduction
+  - Définir les dates de consultation, de signature
+  - Délai de liquidation et fin du flux
 
 ### C_CreationContractant
 
-  - ...
-  - ...
+  - Choisir "Créer un contractant"
+  - Identifiern du Contractant
+  - Définir les montants
+  - Choisir du mécanisme d'avance
 
 ### D_FormulesActes
 
