@@ -36,3 +36,13 @@ Contractant %LoopIndexContractant% - Rôle - Code
 document.getElementsByName('contractantRole_msIdentif')[0].value="%ExcelData[LoopIndex][ColonneContractant]%";
 ```
 
+Si le rôle est mandataire
+
+```javascript
+Contractant %LoopIndexContractant% - Mandataire - Désignation
+```
+
+```javascript
+// Remplir Désignation
+document.getElementsByName('contractantMsDesignationGroupementMandataire')[0].value="%ExcelData[LoopIndex][ColonneContractant]%";
+```
