@@ -106,27 +106,136 @@ Après avoir sélectionné le type de prix, de nouvelles cases s'affichent si le
 #### Type de prix "Révisables" ou "Fermes actualisables"
 
 On coche le type d'index
+```javascript
+// Cocher index
+document.getElementById(%ExcelData[LoopIndex]['Type de prix - Index - Code']%).checked=true
+```
 
 ##### Type de prix "Fermes actualisables"
 
 On définit la date d'actualisation des prix
+```javascript
+// Date d'actualisatiom
+document.getElementsByName('marche_mdtDatePrix')[0].value='%ExcelData[LoopIndex]['Date d\'actualisation des prix']%'
+```
 
 ##### Type de prix "Révisables"
 
 On définit la périodicité de révision
+```javascript
+// Periodicite de revision
+document.getElementById('indexID').checked=true
+```
 
 ###### Si "sur index définitif sans révision provisoire"
 
 On renseigne le "décalage de lecture" qui correspond à un nombre de mois.
+```javascript
+// Nombre de mois
+document.getElementById('indexID').checked=true
+```
 
 ### Date d'établissement des prix
 
 On renseigne ensuite la date d'établissement des prix.
+```javascript
+// Date d'etablissement des prix
+document.getElementsByName('marche_mdtDatePrix')[0].value="%ExcelData[LoopIndex]['Date d\'établissement des prix']%";
+```
 
 ## Choisir le Code CPV
+### Cliquer sur la loupe
+
+```javascript
+// Code CPV principal
+saisieAssisteeCodeCpv();
+```
+
+### Attacher le navigateur
+
+http://garec.cg29.local/intranet/glob/sass/ChargerRechercherCodeCPVPopup.gda
+
+### Récupérer premier résultat
+
+```javascript
+// Code CPV - Recuperer premier resultat
+str = document.getElementsByTagName('a')[1].getAttribute('href').replaceAll('\t','').replaceAll('\n','').replace('javascript:','').replace('; return false;','');
+setTimeout(str,1);
+```
+
 ## Remplir les Montants
+
+### Remplir Montant initial HT
+
+```javascript
+// Montant initial HT
+document.getElementsByName('marche_mdInitHT')[0].value=%ExcelData[LoopIndex]['Montant initial HT']%;
+document.getElementsByName('marche_mdInitHT')[0].onfocus();
+```
+
+### Remplir Taux de TVA
+
+```javascript
+// TVA
+document.getElementsByName('marcheTva_MiCode')[0].value=%ExcelData[LoopIndex]['Taux de TVA - Code']%;
+document.getElementsByName('marcheTva_MiCode')[0].onchange();
+```
+
+#### Si le taux de TVA est "multi-taux" : Remplir Montant initial TTC
+
+```javascript
+// Montant initial TTC
+document.getElementsByName('marche_mdInitTTC')[0].value="%ExcelData[LoopIndex]['Montant initial TTC']%";
+document.getElementsByName('marche_mdInitTTC')[0].onchange();
+```
+
+### Page suivante
+
+```javascript
+// Page suivante
+effectuerSuivante()
+```
+
+!!! Warning
+Une erreur s'affiche. Malgré plusieurs tentatives, impossible de s'en débarasser.
+Elle n'est pas bloquante. Il suffit de cliquer une deuxième fois sur "Suivant"
+
+```javascript
+// Page suivante
+effectuerSuivante()
+```
+
 ## Remplir Mode de passation, dévolution et la gestion de la retenue de garantie
+
+```javascript
+// Mode de passation
+document.getElementsByName('modePassation_miCode')[0].value="%ExcelData[LoopIndex]['Mode de passation - Code']%";
+```
+
+```javascript
+// Devolution
+document.getElementsByName('modeDevolution_miCode')[0].value="%ExcelData[LoopIndex]['Dévolution - Code']%";
+```
+
+```javascript
+// Gestion de la retenue de garantie
+document.getElementsByName('marche_retenue_garantie_miCode')[0].value="%ExcelData[LoopIndex]['Gestion de la retenue de garantie - Code']%";
+```
+
 ## Définir l'auto-liquidation de la sous-traitance
+
+Si Auto-liquidation de la sous-traitance est à "Oui", on coche la case.
+
+```javascript
+// Cocher auto-liquidation de la TVA
+document.getElementsByName('marche_mbAutoLiqTvaSousTraitant')[0].checked=true
+```
+
 ## Reconduction
+
+```javascript
+
+```
+
 ## Définir les dates de consultation, de signature
 ## Délai de liquidation et fin du flux
