@@ -46,19 +46,19 @@ La liste des rôles et leurs indexs respectifs sont renseignés dans Excel. Il s
 document.getElementsByName('contractantRole_msIdentif')[0].value="%ExcelData[LoopIndex][ColonneContractant]%";
 ```
 
-#### Si le rôle est Mandataire
+### Si le rôle est Mandataire
 ![Reprise Marchés SAFI - C_CreationNouveauContractant Mandataire](RepriseMarchesSAFI-C_CreationNouveauContractant_Mandataire.png)
 Si le rôle est mandataire :
 ```javascript
 %ExcelData[LoopIndex][ColonneContractant]% = MA
 ```
 
-### Pointer sur la colonne "Mandataire - Désignation"
+#### Pointer sur la colonne "Mandataire - Désignation"
 ```javascript
 Contractant %LoopIndexContractant% - Mandataire - Désignation
 ```
 
-On remplit ensuite la colonne "Désignation du mandataire"
+#### Remplir "Désignation du mandataire"
 
 ```javascript
 // Remplir Désignation
