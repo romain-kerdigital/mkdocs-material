@@ -134,44 +134,61 @@ document.getElementsByTagName('a')[%IterationFinaleBanque%].click()
 
 ## Montants, Mécanismes d'avance et fin du flux
 
-
+```javascript
 Contractant %LoopIndexContractant% - Montant prévisionnel HT
+```
 
+```javascript
 // Remplir Montant prévisionnel HT
 document.getElementsByName('contractantMtPrevHT')[0].value="%ExcelData[LoopIndex][ColonneContractant]%";
+```
 
-
+```javascript
 Contractant %LoopIndexContractant% - Montant HT
-
-
+```
+```javascript
 // Remplir Montant HT
 document.getElementsByName('contractantMtHTInit')[0].value=%ExcelData[LoopIndex][ColonneContractant]%;
+```
 
+```javascript
 Contractant %LoopIndexContractant% - TVA - Code
+```
 
+```javascript
 // Remplir TVA
 document.getElementsByName('contractantTva_miCode')[0].value=%ExcelData[LoopIndex][ColonneContractant]%;
 document.getElementsByName('contractantTva_miCode')[0].onchange();
+```
 
-
+```javascript
 Contractant %LoopIndexContractant% - Avance - Code
+```
 
+```javascript
 // Remplir Avance
 document.getElementsByName('contractant_MecAv_miCode')[0].value=%ExcelData[LoopIndex][ColonneContractant]%;
 document.getElementsByName('contractant_MecAv_miCode')[0].onchange();
+```
 
+```javascript
 Contractant %LoopIndexContractant% - Taux d'avance
+```
 
+```javascript
 // Remplir Taux avance
 document.getElementsByName('contractant_mdTaux')[0].value='%ExcelData[LoopIndex][ColonneContractant]%';
+```
 
+```javascript
 // Page suivante
 effectuerSuivante()
+```
 
+```javascript
 Valider()
+```
 
+```javascript
 Retour(00, "../../intranet/marc/AfficheMarche.gda?cas=4&IDG=1&IDG=1&IDIP=IDIP_1670579254806&code=1052&ignorerIDIP=1&onglet=2&histoaction=-1")
-
-
-
-
+```
