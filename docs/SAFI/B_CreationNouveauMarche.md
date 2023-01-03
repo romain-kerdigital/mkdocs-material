@@ -103,6 +103,8 @@ document.getElementsByName('typePrix_miCode')[0].value="%ExcelData[LoopIndex]['T
 
 Après avoir sélectionné le type de prix, de nouvelles cases s'affichent si le type de prix n'est pas ferme.
 
+![Reprise Marchés SAFI - B_CreationNouveauMarche Type de prix](RepriseMarchesSAFI-B_CreationNouveauMarche_TypePrix.png)
+
 #### Type de prix "Révisables" ou "Fermes actualisables"
 
 On coche le type d'index
