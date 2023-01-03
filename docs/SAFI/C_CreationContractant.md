@@ -17,8 +17,8 @@ chargerPage('../../intranet/marc/CreerContractant.gda', event)
 Etant donné qu'il y a le numéro du contractant variable dans le nom de colonne, par précaution, on assigne une nouvelle variable : "Colonne Contractant" qui contient le numéro dynamique du contractant :
 ![Reprise Marchés SAFI - C_CreationNouveauContractant Colonne Contractant](RepriseMarchesSAFI-C_CreationNouveauContractant_ColonneContractant.png)
 
+### Pointer sur la colonne "Tiers - Code"
 ```
-Variable "Colonne Contractant"
 Contractant %LoopIndexContractant% - Tiers - Code
 ```
 ## Identification du Contractant
@@ -34,7 +34,7 @@ lancerAllerRetourRPCTiers(document.forms[0], 'contractantTiers_miCode', 'contrac
 ### Remplir le rôle du Contractant
 Le rôle peut être : Titulaire, Sous-traitant ou Mandataire
 
-Définir la Colonne Contractant : Rôle du Tiers
+### Pointer sur la colonne "Rôle - Code"
 ```
 Variable "Colonne Contractant"
 Contractant %LoopIndexContractant% - Rôle - Code
@@ -53,7 +53,7 @@ Si le rôle est mandataire :
 %ExcelData[LoopIndex][ColonneContractant]% = MA
 ```
 
-On sélectionne la ColonneContractant suivante :
+### Pointer sur la colonne "Mandataire - Désignation"
 ```javascript
 Contractant %LoopIndexContractant% - Mandataire - Désignation
 ```
@@ -114,6 +114,8 @@ str2=str.substring(4,31);
 return str2;
 ```
 
+
+
 ```javascript
 ColonneContractantValeur = %ExcelData[LoopIndex][ColonneContractant]%
 ```
@@ -137,6 +139,8 @@ document.getElementsByTagName('a')[%IterationFinaleBanque%].click()
 
 ## Montants, Mécanismes d'avance et fin du flux
 
+### Pointer sur la colonne "Montant prévisionnel HT"
+
 ```javascript
 Contractant %LoopIndexContractant% - Montant prévisionnel HT
 ```
@@ -146,14 +150,19 @@ Contractant %LoopIndexContractant% - Montant prévisionnel HT
 document.getElementsByName('contractantMtPrevHT')[0].value="%ExcelData[LoopIndex][ColonneContractant]%";
 ```
 
+### Pointer sur la colonne "Montant HT"
+
 ```javascript
 Contractant %LoopIndexContractant% - Montant HT
 ```
+
+
 ```javascript
 // Remplir Montant HT
 document.getElementsByName('contractantMtHTInit')[0].value=%ExcelData[LoopIndex][ColonneContractant]%;
 ```
 
+### Pointer sur la colonne "TVA - Code"
 ```javascript
 Contractant %LoopIndexContractant% - TVA - Code
 ```
@@ -164,9 +173,13 @@ document.getElementsByName('contractantTva_miCode')[0].value=%ExcelData[LoopInde
 document.getElementsByName('contractantTva_miCode')[0].onchange();
 ```
 
+### Pointer sur la colonne "Avance - Code"
+
 ```javascript
 Contractant %LoopIndexContractant% - Avance - Code
 ```
+
+
 
 ```javascript
 // Remplir Avance
@@ -174,23 +187,29 @@ document.getElementsByName('contractant_MecAv_miCode')[0].value=%ExcelData[LoopI
 document.getElementsByName('contractant_MecAv_miCode')[0].onchange();
 ```
 
+### Pointer sur la colonne "Taux d'avance"
+
 ```javascript
 Contractant %LoopIndexContractant% - Taux d'avance
 ```
 
+### Remplir le taux d'avance
 ```javascript
 // Remplir Taux avance
 document.getElementsByName('contractant_mdTaux')[0].value='%ExcelData[LoopIndex][ColonneContractant]%';
 ```
 
+### Cliquer sur Suivant
 ```javascript
 // Page suivante
 effectuerSuivante()
 ```
 
+### Cliquer sur Valider
 ```javascript
 Valider()
 ```
+### Cliquer sur Retour
 
 ```javascript
 Retour(00, "../../intranet/marc/AfficheMarche.gda?cas=4&IDG=1&IDG=1&IDIP=IDIP_1670579254806&code=1052&ignorerIDIP=1&onglet=2&histoaction=-1")
