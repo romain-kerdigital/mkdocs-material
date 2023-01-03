@@ -207,16 +207,19 @@ effectuerSuivante()
 
 ## Remplir Mode de passation, dévolution et la gestion de la retenue de garantie
 
+### Remplir le mode de passation
 ```javascript
 // Mode de passation
 document.getElementsByName('modePassation_miCode')[0].value="%ExcelData[LoopIndex]['Mode de passation - Code']%";
 ```
 
+### Remplir la dévolution
 ```javascript
 // Devolution
 document.getElementsByName('modeDevolution_miCode')[0].value="%ExcelData[LoopIndex]['Dévolution - Code']%";
 ```
 
+### Remplir la gestion de la retenue de garantie
 ```javascript
 // Gestion de la retenue de garantie
 document.getElementsByName('marche_retenue_garantie_miCode')[0].value="%ExcelData[LoopIndex]['Gestion de la retenue de garantie - Code']%";
