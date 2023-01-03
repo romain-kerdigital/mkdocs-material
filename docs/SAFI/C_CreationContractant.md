@@ -79,15 +79,17 @@ http://garec.cg29.local/intranet/glob/sass/recherchePopupRefTiers.gda
 
 #### Choisir la bonne référence bancaire
 
-Plusieurs références bancaires peuvent apparaître. Il faut choisir celle qui correspond et retourner un message d'erreur lorsque la référence bancaire n'est pas enregistrée.
+!!! note
+    Plusieurs références bancaires peuvent apparaître. Il faut choisir celle qui correspond et retourner un message d'erreur lorsque la référence bancaire n'est pas enregistrée.
 
 ![Reprise Marchés SAFI - C_CreationNouveauContractant Banque](RepriseMarchesSAFI-C_CreationNouveauContractant_Banque.png)
 
-On récupère le nombre total d'éléments en "gras".
-Il y a 4 éléments en gras par ligne, on récupère le nombre d'éléments dans la liste des éléments en gras sur la fenêtre.
-Le bouton à cliquer est le premier élément de la ligne sur un modulo 4.
-Le dernier élément sélectionnable est donc le dernier élément moins 3.
-On stocke cette valeur dans une variable "MaxIterations"
+!!! note
+    On récupère le nombre total d'éléments en "gras".
+    Il y a 4 éléments en gras par ligne, on récupère le nombre d'éléments dans la liste des éléments en gras sur la fenêtre.
+    Le bouton à cliquer est le premier élément de la ligne sur un modulo 4.
+    Le dernier élément sélectionnable est donc le dernier élément moins 3.
+    On stocke cette valeur dans une variable "MaxIterations"
 
 
 ```javascript
@@ -96,7 +98,8 @@ nb=document.getElementsByTagName('strong').length-3;
 return nb;
 ```
 
-Le résultat stocké n'est pas automatquement reconnu en nombre. On convertit donc "MaxIterations" en nombre "MaxIterationsBanque" pour permettre des itérations.
+!!! note
+    Le résultat stocké n'est pas automatquement reconnu en nombre. On convertit donc "MaxIterations" en nombre "MaxIterationsBanque" pour permettre des itérations.
 
 On change la "Colonne contractant" :
 Contractant %LoopIndexContractant% - Iban à créditer
@@ -111,9 +114,9 @@ str2=str.substring(4,31);
 return str2;
 ```
 
-ColonneContractantValeur
-%ExcelData[LoopIndex][ColonneContractant]%
-
+```javascript
+ColonneContractantValeur = %ExcelData[LoopIndex][ColonneContractant]%
+```
 Si IbanTest = ColonneContractantValeur
 On définit la variable : IterationFinaleBanque = %(LoopIndexBanque - 1) / 4%
 Et on sort de la boucle.
