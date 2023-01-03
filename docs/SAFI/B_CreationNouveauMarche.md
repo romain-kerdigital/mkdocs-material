@@ -231,13 +231,15 @@ Si Auto-liquidation de la sous-traitance est à "Oui", on coche la case.
 document.getElementsByName('marche_mbAutoLiqTvaSousTraitant')[0].checked=true
 ```
 
-## Reconduction
+##Si Reconduction, remplir les informations associées
 
+### Cocher Expresse ou Tacite
 ```javascript
 // Cocher Expresse ou Tacite
 document.getElementsByName('%ExcelData[LoopIndex]['Reconduction - Code']%')[0].click()
 ```
 
+### Remplir les 3 cases de durée de reconduction
 ```javascript
 // Duree de reconduction
 document.getElementsByName('marche_miAnneeReconduction')[0].value="%ExcelData[LoopIndex]['Durée de reconduction - Années']%";
@@ -245,6 +247,7 @@ document.getElementsByName('marche_miMoisReconduction')[0].value="%ExcelData[Loo
 document.getElementsByName('marche_miJourReconduction')[0].value="%ExcelData[LoopIndex]['Durée de reconduction - Jours']%";
 ```
 
+### Valoriser le nombre de reconduction
 ```javascript
 // Nombre de reconduction
 document.getElementsByName('marche_miNbReconduction')[0].value="%ExcelData[LoopIndex]['Nombre de reconductions']%";
@@ -252,11 +255,13 @@ document.getElementsByName('marche_miNbReconduction')[0].value="%ExcelData[LoopI
 
 ## Définir les dates de consultation, de signature
 
+### Valoriser la date de consultation
 ```javascript
 // Date de consultation
 document.getElementsByName('marche_mdtConsultation')[0].value="%ExcelData[LoopIndex]['Date de consultation']%";
 ```
 
+### Valoriser la date de signature
 ```javascript
 // Date de signature
 document.getElementsByName('marche_mdtSignature')[0].value="%ExcelData[LoopIndex]['Date de signature']%";
@@ -264,16 +269,18 @@ document.getElementsByName('marche_mdtSignature')[0].value="%ExcelData[LoopIndex
 
 ## Délai de liquidation et fin du flux
 
+### Valoriser le délai de liquidation à 1460 jours
 ```javascript
 // Delai de liquidation
 document.getElementsByName('')[0].value="1460";
 ```
 
+### Cliquer sur Suivant
 ```javascript
 // Page suivante
 effectuerSuivante()
 ```
-
+### Cliquer sur Valider
 ```javascript
 Valider()
 ```
