@@ -197,8 +197,8 @@ effectuerSuivante()
 ```
 
 !!! Warning
-Une erreur s'affiche. Malgré plusieurs tentatives, impossible de s'en débarasser.
-Elle n'est pas bloquante. Il suffit de cliquer une deuxième fois sur "Suivant"
+    Une erreur s'affiche. Malgré plusieurs tentatives, impossible de s'en débarasser.
+    Elle n'est pas bloquante. Il suffit de cliquer une deuxième fois sur "Suivant"
 
 ```javascript
 // Page suivante
