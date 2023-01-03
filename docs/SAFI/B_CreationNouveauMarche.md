@@ -234,8 +234,46 @@ document.getElementsByName('marche_mbAutoLiqTvaSousTraitant')[0].checked=true
 ## Reconduction
 
 ```javascript
+// Cocher Expresse ou Tacite
+document.getElementsByName('%ExcelData[LoopIndex]['Reconduction - Code']%')[0].click()
+```
 
+```javascript
+// Duree de reconduction
+document.getElementsByName('marche_miAnneeReconduction')[0].value="%ExcelData[LoopIndex]['Durée de reconduction - Années']%";
+document.getElementsByName('marche_miMoisReconduction')[0].value="%ExcelData[LoopIndex]['Durée de reconduction - Mois']%";
+document.getElementsByName('marche_miJourReconduction')[0].value="%ExcelData[LoopIndex]['Durée de reconduction - Jours']%";
+```
+
+```javascript
+// Nombre de reconduction
+document.getElementsByName('marche_miNbReconduction')[0].value="%ExcelData[LoopIndex]['Nombre de reconductions']%";
 ```
 
 ## Définir les dates de consultation, de signature
+
+```javascript
+// Date de consultation
+document.getElementsByName('marche_mdtConsultation')[0].value="%ExcelData[LoopIndex]['Date de consultation']%";
+```
+
+```javascript
+// Date de signature
+document.getElementsByName('marche_mdtSignature')[0].value="%ExcelData[LoopIndex]['Date de signature']%";
+```
+
 ## Délai de liquidation et fin du flux
+
+```javascript
+// Delai de liquidation
+document.getElementsByName('')[0].value="1460";
+```
+
+```javascript
+// Page suivante
+effectuerSuivante()
+```
+
+```javascript
+Valider()
+```
