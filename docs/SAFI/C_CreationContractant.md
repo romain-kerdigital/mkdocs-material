@@ -124,12 +124,54 @@ Si on arrive au bout de MaxIterationBanques et que la valeur ne correspond pas,
 On définit la variable "Erreur" avec comme valeur : "IBAN non attaché au tiers"
 Et on lance le flux G_RapportErreur avant d'arrêter l'automatisation.
 
+Une fois sorti de la boucle, on clique sur l'élément numéro "IterationFinaleBanque" de la liste.
 
-## Montants
+```javascript
+document.getElementsByTagName('a')[%IterationFinaleBanque%].click()
+```
+
+
+
+## Montants, Mécanismes d'avance et fin du flux
 
 
 Contractant %LoopIndexContractant% - Montant prévisionnel HT
 
-## Mécanismes d'avance
+// Remplir Montant prévisionnel HT
+document.getElementsByName('contractantMtPrevHT')[0].value="%ExcelData[LoopIndex][ColonneContractant]%";
+
+
+Contractant %LoopIndexContractant% - Montant HT
+
+
+// Remplir Montant HT
+document.getElementsByName('contractantMtHTInit')[0].value=%ExcelData[LoopIndex][ColonneContractant]%;
+
+Contractant %LoopIndexContractant% - TVA - Code
+
+// Remplir TVA
+document.getElementsByName('contractantTva_miCode')[0].value=%ExcelData[LoopIndex][ColonneContractant]%;
+document.getElementsByName('contractantTva_miCode')[0].onchange();
+
+
+Contractant %LoopIndexContractant% - Avance - Code
+
+// Remplir Avance
+document.getElementsByName('contractant_MecAv_miCode')[0].value=%ExcelData[LoopIndex][ColonneContractant]%;
+document.getElementsByName('contractant_MecAv_miCode')[0].onchange();
+
+Contractant %LoopIndexContractant% - Taux d'avance
+
+// Remplir Taux avance
+document.getElementsByName('contractant_mdTaux')[0].value='%ExcelData[LoopIndex][ColonneContractant]%';
+
+// Page suivante
+effectuerSuivante()
+
+Valider()
+
+Retour(00, "../../intranet/marc/AfficheMarche.gda?cas=4&IDG=1&IDG=1&IDIP=IDIP_1670579254806&code=1052&ignorerIDIP=1&onglet=2&histoaction=-1")
+
+
 
 
