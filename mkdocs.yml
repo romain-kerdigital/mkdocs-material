@@ -102,7 +102,7 @@ plugins:
 #        upgrading.md: upgrade.md
   - minify:
       minify_html: true
-
+  - mkdocs-video
 # Customization
 extra:
   generator: false
