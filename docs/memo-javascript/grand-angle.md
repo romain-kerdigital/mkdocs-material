@@ -1,5 +1,12 @@
 # Mémo Javascript - Grand Angle
 
+## Enlever le bandeau lors de la connexion
+``` javascript
+// Enlever bandeau
+document.cookie = "rgpdInfosHidden=1; path=/;";
+document.getElementsByClassName("mat-snack-bar-container")[0].style.display = "none";
+```
+
 ## Pointer sur un champ du formulaire
 
 Tous les scripts commencent par "document", "document" correspond au contenu visible de la page.
