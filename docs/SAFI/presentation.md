@@ -24,6 +24,10 @@ Il permet de confirmer les étapes à paramétrer pour le robot en envisageant t
 
 ![Reprise Marchés SAFI - main](RepriseMarchesSAFI-main.png)
 
+!!! Warning
+    Le format Date sur Excel doit être : JJ/MM/AAAA
+    Le séparateur de décimales doit être un point et non pas une virgule.
+
 ### A_Initialisation
   - Fermer les applications ouvertes
   - Lire les données dans le fichier Excel
