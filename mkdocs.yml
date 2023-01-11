@@ -175,6 +175,7 @@ nav:
     - G_RapportErreur: SAFI/G_RapportErreur.md
     - Annexes: SAFI/annexes.md
   - Mémo Javascript:
+    - Général: memo-javascript/general.md
     - Grand Angle: memo-javascript/grand-angle.md
 #- Getting started:
 #  - Installation: getting-started.md
