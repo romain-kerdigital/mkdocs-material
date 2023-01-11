@@ -53,7 +53,7 @@ Tous les contractants sont sur la même ligne (jusqu'à 10 contractants, d'où l
 ### C_CreationContractant
 
   - Choisir "Créer un contractant"
-  - Identifiern du Contractant
+  - Identifier le contractant
   - Définir les montants
   - Choisir du mécanisme d'avance
 
@@ -72,6 +72,22 @@ Tous les contractants sont sur la même ligne (jusqu'à 10 contractants, d'où l
   - Fermer applications en cours
 
 ### G_RapportErreur
-
   - Récupérer informations
   - Ecrire informations dans Excel
+
+## Lancer l'automatisation
+Avant de lancer l'automatisation, il faut s'assurer que les données à traiter apparaissent bien dans le fichier "A traiter"
+
+Pour les faire apparaître, il faut modifier la feuille "RPA" pour que la colonne CD29 comporte la valeur : "Achevé" et que la colonne RPA soit vide.
+
+Il faut également que toutes les lignes en dessous du tableau soient vides et sans formatage pour que l'automatisation s'arrête.
+
+Dans le pire des cas, le système retournera une erreur et ne pourra pas créer de nouveau marché. Les marchés précédents seront bien créés et le rapport d'éxecution sera également à jour.
+
+Il suffira de fermer manuellement Excel et Edge.
+
+Après le traitement, les données sont toujours dans la feuille "A traiter".
+
+Pour migrer les lignes vers la feuille "Traité", il suffit de remplir "Valide" dans la feuille "RPA"
+
+Le rapport d'exécution restera dans la feuille "A traiter", il faudra reporter ces informations dans la feuille "Traité" manuellement.
