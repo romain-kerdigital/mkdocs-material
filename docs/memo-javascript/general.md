@@ -1,12 +1,5 @@
 # Mémo Javascript - Général
 
-## Enlever le bandeau lors de la connexion
-``` javascript
-// Enlever bandeau
-document.cookie = "rgpdInfosHidden=1; path=/;";
-document.getElementsByClassName("mat-snack-bar-container")[0].style.display = "none";
-```
-
 ## Pointer sur un champ du formulaire
 
 Tous les scripts commencent par "document", "document" correspond au contenu visible de la page.
@@ -59,7 +52,8 @@ Pour remplir du texte, il suffit de changer la valeur de l'élément.
 document.getElementsbyId('test').value="Texte";
 ```
 
-\!\!\! warning Attention \! En remplissant manuellement certaines cases, des scripts se lancent automatiquement parfois. (Notamment sur des montants) Généralement on les retrouve dans le param&egrave;tre "onchange" de l'élément. Lorsque l'on change uniquement la valeur par script, les scripts qui se lan&ccedil;aient automatiquement ne se lancent pas. C'est notamment le cas pour tous les montants avec TVA calculée.
+!!! warning
+    En remplissant manuellement certaines cases, des scripts se lancent automatiquement parfois. (Notamment sur des montants) Généralement on les retrouve dans le param&egrave;tre "onchange" de l'élément. Lorsque l'on change uniquement la valeur par script, les scripts qui se lan&ccedil;aient automatiquement ne se lancent pas. C'est notamment le cas pour tous les montants avec TVA calculée.
 
 Il existe deux méthode pour simuler la saisie manuelle :
 
