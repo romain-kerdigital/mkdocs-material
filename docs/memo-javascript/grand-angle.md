@@ -23,11 +23,12 @@ Valider()
 ```
 
 ### Cliquer sur Retour
+Le bouton retour suit ce format :
 ``` javascript
-// Cliquer sur Retour
+// Cliquer sur Retour 
 Retour(00, "../../intranet/marc/AfficheMarche.gda?cas=4&IDG=1&IDG=1&IDIP=IDIP_1670579254806&code=1052&ignorerIDIP=1&onglet=2&histoaction=-1")
 ```
-
+Mais, il existe des variantes. Il faut donc utiliser l'inspecteur dans ce cas.
 ``` javascript
 // Cliquer sur Retour
 Retour(00, "../../intranet/marc/AfficheMarche.gda?cas=4&IDG=1&IDG=1&IDIP=IDIP_1670856590548&code=1078&ignorerIDIP=1&onglet=2&histoaction=-1")
@@ -61,6 +62,7 @@ chargerPage('../../intranet/marc/CreerActe.gda', event);
 ```
 
 ## Cliquer sur une loupe
+Voici le format du code. Il faut utiliser l'inspecteur pour récupérer le bon code.
 ```javascript
 // Cliquer sur la loupe Type d'engagement
 saisieAssisteeTypeEnga()
