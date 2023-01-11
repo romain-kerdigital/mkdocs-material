@@ -49,7 +49,7 @@ saisieAssisteeTypeEnga()
 ```
 
 ## Sélectionner un élément sans ClassName
-On peut chercher avec le TagName : [Voir exemple](../SAFI/B_CreationNouveauMarche.md)
+On peut chercher avec le TagName : [Voir exemple](../SAFI/B_CreationNouveauMarche/#cliquer-sur-le-premier-element-de-la-liste)
 ```javascript
 document.getElementsByTagName('a')[4].click()
 ```
