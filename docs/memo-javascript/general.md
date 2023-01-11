@@ -65,6 +65,12 @@ Il existe deux méthodes pour simuler la saisie manuelle :
 document.getElementsByName("test")[0].onchange();
 ```
 
+## Sélectionner un élément sans ClassName
+On peut chercher avec le TagName : [Voir exemple](../SAFI/B_CreationNouveauMarche/#cliquer-sur-le-premier-element-de-la-liste)
+```javascript
+document.getElementsByTagName('a')[4].click()
+```
+
 ## Cocher une case
 
 ```javascript
