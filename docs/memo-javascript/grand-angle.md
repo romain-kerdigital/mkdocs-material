@@ -45,6 +45,12 @@ rch_jsp_BoutonRechercher()
 ```
 
 ## Créer un nouvel élément
+
+```javascript
+//Cliquer sur l'onglet détails
+ChangerOnglet(2);
+```
+
 ```javascript
 // Créer un contractant
 chargerPage('../../intranet/marc/CreerContractant.gda', event)
