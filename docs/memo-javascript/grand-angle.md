@@ -10,29 +10,35 @@ document.cookie = "rgpdInfosHidden=1; path=/;";
 document.getElementsByClassName("mat-snack-bar-container")[0].style.display = "none";
 ```
 
-## Passer à la page suivante
+## Cliquer sur des boutons
+### Passer à la page suivante
 ``` javascript
 // Page suivante
 effectuerSuivante()
 ```
 
-## Cliquer sur Valider
+### Cliquer sur Valider
 ``` javascript
 Valider()
 ```
 
-## Cliquer sur Enregistrer
+### Cliquer sur Enregistrer
 ``` javascript
 // Enlever bandeau
 document.cookie = "rgpdInfosHidden=1; path=/;";
 document.getElementsByClassName("mat-snack-bar-container")[0].style.display = "none";
 ```
-## Cliquer sur Retour
+### Cliquer sur Retour
 ``` javascript
 // Cliquer sur Retour
 Retour(00, "../../intranet/marc/AfficheMarche.gda?cas=4&IDG=1&IDG=1&IDIP=IDIP_1670579254806&code=1052&ignorerIDIP=1&onglet=2&histoaction=-1")
-
 ```
+
+``` javascript
+// Cliquer sur Retour
+Retour(00, "../../intranet/marc/AfficheMarche.gda?cas=4&IDG=1&IDG=1&IDIP=IDIP_1670856590548&code=1078&ignorerIDIP=1&onglet=2&histoaction=-1")
+```
+
 ### Cliquer sur Rechercher
 ```javascript
 rch_jsp_BoutonRechercher()
