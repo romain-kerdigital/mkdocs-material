@@ -17,6 +17,10 @@ document.cookie = "rgpdInfosHidden=1; path=/;";
 document.getElementsByClassName("mat-snack-bar-container")[0].style.display = "none";
 ```
 
+## Cliquer sur Valider
+``` javascript
+Valider()
+```
 
 ## Cliquer sur Enregistrer
 ``` javascript
