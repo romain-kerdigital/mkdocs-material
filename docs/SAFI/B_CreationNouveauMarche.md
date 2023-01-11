@@ -66,7 +66,7 @@ On lance le script associé au bouton Rechercher
 rch_jsp_BoutonRechercher()
 ```
 
-### CLiquer sur le premier élément de la liste
+### Cliquer sur le premier élément de la liste
 Ici, il n'y a pas de Name ou d'ID pour choisir l'élément à cliquer. On fait donc une recherche par TagName. Il s'agit du 5ème élément de la liste des "a" sur la page.
 ```javascript
 document.getElementsByTagName('a')[4].click()
