@@ -90,4 +90,5 @@ Après le traitement, les données sont toujours dans la feuille "A traiter".
 
 Pour migrer les lignes vers la feuille "Traité", il suffit de remplir "Valide" dans la feuille "RPA"
 
-Le rapport d'exécution restera dans la feuille "A traiter", il faudra reporter ces informations dans la feuille "Traité" manuellement.
+!!! Warning
+    Le rapport d'exécution restera dans la feuille "A traiter", il faudra reporter ces informations dans la feuille "Traité" manuellement.
