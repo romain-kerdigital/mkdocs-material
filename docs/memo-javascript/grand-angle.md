@@ -35,6 +35,12 @@ document.cookie = "rgpdInfosHidden=1; path=/;";
 document.getElementsByClassName("mat-snack-bar-container")[0].style.display = "none";
 ```
 
+## Cliquer sur une loupe
+```javascript
+// Cliquer sur la loupe Type d'engagement
+saisieAssisteeTypeEnga()
+```
+
 ## Sélectionner un élément sans ClassName
 ``` javascript
 // Enlever bandeau
