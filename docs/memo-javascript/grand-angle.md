@@ -29,9 +29,9 @@ document.getElementsByClassName("mat-snack-bar-container")[0].style.display = "n
 ```
 ## Cliquer sur Retour
 ``` javascript
-// Enlever bandeau
-document.cookie = "rgpdInfosHidden=1; path=/;";
-document.getElementsByClassName("mat-snack-bar-container")[0].style.display = "none";
+// Cliquer sur Retour
+Retour(00, "../../intranet/marc/AfficheMarche.gda?cas=4&IDG=1&IDG=1&IDIP=IDIP_1670579254806&code=1052&ignorerIDIP=1&onglet=2&histoaction=-1")
+
 ```
 ### Cliquer sur Rechercher
 ```javascript
@@ -49,6 +49,10 @@ document.getElementsByClassName("mat-snack-bar-container")[0].style.display = "n
 ```javascript
 // Cliquer sur la loupe Type d'engagement
 saisieAssisteeTypeEnga()
+```
+```javascript
+// Cliquer sur la loupe Références Bancaires
+saisieAssisteeReferenceBancaire('contractantTiers_miCode', 'contracantRefBancaireTiers_miCode', 'contractantRefBancaire_miCode', 'contractantRefBancaire_msLib');
 ```
 
 ## Sélectionner un élément sans ClassName
