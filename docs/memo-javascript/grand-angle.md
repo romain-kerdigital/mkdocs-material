@@ -44,6 +44,22 @@ Retour(00, "../../intranet/marc/AfficheMarche.gda?cas=4&IDG=1&IDG=1&IDIP=IDIP_16
 rch_jsp_BoutonRechercher()
 ```
 
+## Créer un nouvel élément
+```javascript
+// Créer un contractant
+chargerPage('../../intranet/marc/CreerContractant.gda', event)
+```
+
+```javascript
+// Créer une formule
+chargerPage('../../intranet/marc/CreerFormuleVariation.gda')
+```
+
+```javascript
+// Creer un acte
+chargerPage('../../intranet/marc/CreerActe.gda', event);
+```
+
 ## Simuler la saisie manuelle des montants pour le calcul de la TVA
 ``` javascript
 // Enlever bandeau
