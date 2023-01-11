@@ -82,9 +82,9 @@ Pour les faire apparaître, il faut modifier la feuille "RPA" pour que la colonn
 
 Il faut également que toutes les lignes en dessous du tableau soient vides et sans formatage pour que l'automatisation s'arrête.
 
-Dans le pire des cas, le système retournera une erreur et ne pourra pas créer de nouveau marché. Les marchés précédents seront bien créés et le rapport d'éxecution sera également à jour.
-
-Il suffira de fermer manuellement Excel et Edge.
+!!! Note
+    Dans le pire des cas, le système retournera une erreur et ne pourra pas créer de nouveau marché. Les marchés précédents seront bien créés et le rapport d'éxecution sera également à jour.
+    Il suffira de fermer manuellement Excel et Edge.
 
 Après le traitement, les données sont toujours dans la feuille "A traiter".
 
