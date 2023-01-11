@@ -12,9 +12,8 @@ document.getElementsByClassName("mat-snack-bar-container")[0].style.display = "n
 
 ## Passer à la page suivante
 ``` javascript
-// Enlever bandeau
-document.cookie = "rgpdInfosHidden=1; path=/;";
-document.getElementsByClassName("mat-snack-bar-container")[0].style.display = "none";
+// Page suivante
+effectuerSuivante()
 ```
 
 ## Cliquer sur Valider
