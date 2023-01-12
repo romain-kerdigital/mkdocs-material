@@ -80,7 +80,3 @@ document.test()
 ## Choisir un élément dans une liste déroulante
 
 ## Choisir un élément dans une liste de boutons radio
-
-## Exécuter un script javascript directement sur la page
-
-## Cas particuliers
